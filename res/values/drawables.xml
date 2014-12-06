@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="drawable" name="action_bar_selector">@drawable/_selector_dark</item>
+</resources>

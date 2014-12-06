@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:weightSum="100" >
+
+    <ImageView
+        android:id="@+id/stripe"
+        android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        android:adjustViewBounds="true"
+        android:background="@color/Color1"
+        android:baselineAlignBottom="true"
+        android:contentDescription="@string/Password"
+        android:scaleType="centerCrop" />
+
+    <LinearLayout
+        android:id="@+id/contentLayout"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dip"
+        android:layout_weight="90"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dip"
+            android:text="@string/Username"
+            android:textColor="#33B6EA"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/event_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/event_cover_url"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/event_visible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/event_description_datex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:fontFamily="sans-serif-light"
+            android:text="@string/Username"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/event_description_dateFIN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:fontFamily="sans-serif-light"
+            android:text="@string/Username"
+            android:textSize="16sp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/event_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:fontFamily="sans-serif-light"
+            android:text="@string/Username"
+            android:textSize="16sp"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/mobile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:text="fsss"
+        android:textColor="#5d5d5d"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="0dip"
+        android:layout_height="fill_parent"
+        android:layout_weight="10"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/overflow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selectable_background_cardbank"
+            android:contentDescription="@string/abc_action_bar_home_description"
+            android:padding="2dip"
+            android:src="@drawable/ic_menu_moreoverflow_normal_holo_light" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="Color1">#ff8800</color>
+    <color name="Color3">#f1c40f</color>
+    <color name="Color2">#ff9d00</color>
+    <color name="NiceButtonDisabledStartColor">#565051</color>
+    <color name="NiceButtonDisabledEndColor">#736F6E</color>
+    <color name="NiceButtonBorderColor">#254117</color>
+
+    <item name="common_signin_btn_dark_text_default" type="color">@*android:color/white</item>
+    <item name="common_signin_btn_dark_text_pressed" type="color">@*android:color/white</item>
+
+    <color name="common_signin_btn_dark_text_disabled">#ffaaaaaa</color>
+
+    <item name="common_signin_btn_dark_text_focused" type="color">@*android:color/white</item>
+
+    <color name="common_signin_btn_light_text_default">#ff737373</color>
+
+    <item name="common_signin_btn_light_text_pressed" type="color">@*android:color/white</item>
+
+    <color name="common_signin_btn_light_text_disabled">#ffaaaaaa</color>
+    <color name="common_signin_btn_light_text_focused">#ff737373</color>
+    <color name="common_signin_btn_default_background">#ffdd4b39</color>
+    <color name="common_action_bar_splitter">#ffd2d2d2</color>
+    <color name="com_facebook_blue">#ff3b5998</color>
+    <color name="com_facebook_usersettingsfragment_connected_text_color">#ffffffff</color>
+    <color name="com_facebook_usersettingsfragment_connected_shadow_color">#ff000000</color>
+    <color name="com_facebook_usersettingsfragment_not_connected_text_color">#ffa6aed7</color>
+    <color name="com_facebook_loginview_text_color">#ffffffff</color>
+    <color name="abs__background_holo_dark">#ff000000</color>
+    <color name="abs__background_holo_light">#fff3f3f3</color>
+
+    <item name="abs__bright_foreground_holo_dark" type="color">@color/abs__background_holo_light</item>
+    <item name="abs__bright_foreground_holo_light" type="color">@color/abs__background_holo_dark</item>
+
+    <color name="abs__bright_foreground_disabled_holo_dark">#ff4c4c4c</color>
+    <color name="abs__bright_foreground_disabled_holo_light">#ffb2b2b2</color>
+    <color name="m_background_tab_pressed">#ff000000</color>
+    <color name="m_background_tab_not_pressed">#ff1f1f1f</color>
+    <color name="action_bar_olive_green">#ff0eb69e</color>
+    <color name="menu_button_pressed">#ff3d3d3d</color>
+    <color name="menu_button_not_pressed">#ff454545</color>
+    <color name="explore_button_pressed">#ffe94549</color>
+    <color name="explore_button">#fffa565a</color>
+    <color name="explore_tab">#ffe6e5e5</color>
+    <color name="explore_tab_active">#fff1f1f1</color>
+    <color name="discover_li">#ffeeeeee</color>
+    <color name="discover_li_selected">#ffc4e8e3</color>
+    <color name="discover_li_pressed">#ffd9d9d9</color>
+    <color name="action_mode_bg">#ff26cdb5</color>
+    <color name="undo_btn_pressed">#ff737373</color>
+    <color name="menu_profile_button_bg">#ff2d2d2d</color>
+    <color name="ActionBar.Title.TextColor">#fff1f1f1</color>
+    <color name="event.comment.send.btn">#ffe4e4e4</color>
+    <color name="profil.tab.pressed">#12ffffff</color>
+    <color name="abs__background_holo_dark">#ff000000</color>
+    <color name="abs__background_holo_light">#fff3f3f3</color>
+
+    <item name="abs__bright_foreground_holo_dark" type="color">@color/abs__background_holo_light</item>
+    <item name="abs__bright_foreground_holo_light" type="color">@color/abs__background_holo_dark</item>
+
+    <color name="abs__bright_foreground_disabled_holo_dark">#ff4c4c4c</color>
+    <color name="abs__bright_foreground_disabled_holo_light">#ffb2b2b2</color>
+
+    <item name="common_signin_btn_dark_text_default" type="color">@*android:color/white</item>
+    <item name="common_signin_btn_dark_text_pressed" type="color">@*android:color/white</item>
+
+    <color name="common_signin_btn_dark_text_disabled">#ffaaaaaa</color>
+
+    <item name="common_signin_btn_dark_text_focused" type="color">@*android:color/white</item>
+
+    <color name="common_signin_btn_light_text_default">#ff737373</color>
+
+    <item name="common_signin_btn_light_text_pressed" type="color">@*android:color/white</item>
+	 <color name="light_title">#ff666666</color>
+    <color name="common_signin_btn_light_text_disabled">#ffaaaaaa</color>
+    <color name="common_signin_btn_light_text_focused">#ff737373</color>
+    <color name="common_signin_btn_default_background">#ffdd4b39</color>
+    <color name="common_action_bar_splitter">#ffd2d2d2</color>
+    <color name="splash_background">#ffebebeb</color>
+    <color name="menu_frame">#ffffffff</color>
+    <color name="menu_text">#ffffffff</color>
+    <color name="menu_background">#ff2f3233</color>
+    <color name="menu_line">#ff1e1e1e</color>
+    <color name="Background_main">#ffebebeb</color>
+    <color name="Background_main_content">#ffffffff</color>
+    <color name="Background_detail_btn">#ff2f3233</color>
+    <color name="Background_actionbar">#ff6bb40b</color>
+    <color name="divider">#ffebebeb</color>
+    <color name="actionbar_title_color">#ffffffff</color>
+    <color name="home_layout_price">#ff0b9ff9</color>
+    <color name="title_app">#ffffffff</color>
+    <color name="text_title">#ff454547</color>
+    <color name="text_sub_title">#ff777777</color>
+    <color name="text_deal">#ffffffff</color>
+    <color name="text_deal_detail">#ff0b9ff9</color>
+    <color name="text_disc">#ffc60c0c</color>
+    <color name="text_sub_title_setting">#ff777777</color>
+    <color name="text_link">#ff6bb40b</color>
+    <color name="text_btn">#ffffffff</color>
+    <color name="ct_blue">#ff007ec6</color>
+    <color name="ev_green_w">#ff26CDB5</color>
+    <color name="ct_dark_gray">#ff363636</color>
+    <color name="ct_dark_gray_10p">#19363636</color>
+    <color name="ct_dark_gray_20p">#b2b2b2</color>
+    <color name="ct_dark_gray_5p">#0c363636</color>
+    <color name="ct_dark_gray_60p">#99363636</color>
+    <color name="ct_gray">#ffdedfde</color>
+    <color name="ct_green">#ff62aa60</color>
+    <color name="ct_green_10p">#1975af65</color>
+    <color name="ct_orange">#ffff8800</color>
+    <color name="ct_red">#fff05555</color>
+    <color name="ct_white">#ffffffff</color>
+    <color name="ct_white_10p">#19ffffff</color>
+    <color name="ct_white_20p">#33ffffff</color>
+    <color name="ct_white_40p">#66ffffff</color>
+    <color name="ct_yellow">#fffbe926</color>
+
+    <item name="divider" type="color">@color/ct_gray</item>
+    <item name="divider_dark_20p" type="color">@color/ct_white_20p</item>
+    <item name="divider_dark_40p" type="color">@color/ct_white_40p</item>
+
+    <color name="divider_darker">#ffcecece</color>
+    <color name="gray">#ff777777</color>
+    <color name="grayBack">#fff7f7f7</color>
+
+</resources>

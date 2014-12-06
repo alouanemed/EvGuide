@@ -1,0 +1,99 @@
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <style name="Theme.Styled" parent="@style/Theme.AppCompat.Light">
+
+        <!-- Setting values in the default namespace affects API levels 7-13 -->
+        <item name="actionBarStyle">@style/Widget.Styled.ActionBar</item>
+    </style>
+	 <style name="flatGreenButtonStyle">
+        <item name="android:textSize">20.0sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/ct_dark_gray</item>
+        <item name="android:background">@drawable/flat_green_button_background</item>
+        <item name="android:paddingTop">7.0dip</item>
+        <item name="android:paddingBottom">7.0dip</item>
+        <item name="android:layout_marginLeft">10.0dip</item>
+        <item name="android:layout_marginRight">10.0dip</item>
+        <item name="android:layout_marginBottom">10.0dip</item>
+    </style>
+    <style name="Widget.Styled.ActionBar" parent="@style/Widget.AppCompat.Light.ActionBar">
+
+        <!-- Setting values in the default namespace affects API levels 7-13 -->
+        <item name="background">@drawable/abc_ab_bottom_solid_dark_holo</item>
+        <item name="backgroundStacked">@drawable/abc_ab_bottom_solid_dark_holo</item>
+        <item name="backgroundSplit">@drawable/abc_ab_bottom_solid_dark_holo</item>
+    </style>
+
+    <style name="EvCardStyle" parent="android:Widget.TextView">
+        <item name="android:background">@drawable/search_bg_shadow</item>
+        <item name="android:gravity">center</item>
+        <item name="android:minHeight">200dp</item>
+        <item name="android:minWidth">200dp</item>
+        <item name="android:textColor">#707070</item>
+    </style>
+
+    <!-- New!!!!! -->
+
+    <style name="CustomTheme" parent="@android:style/Theme.Holo.Light">
+        <item name="android:alertDialogTheme">@style/CustomDialogTheme</item>
+        <item name="android:dialogTheme">@style/CustomDialogTheme</item>
+    </style>
+
+    <style name="CustomDialogTheme" parent="@android:style/Theme.Dialog">
+        <item name="@android:background">@color/Color2</item>
+        <item name="@android:textColor">#FAF5F7</item>
+    </style>
+
+    <!-- NEww -->
+    <style name="Form">
+        <item name="android:scrollbarStyle">outsideOverlay</item>
+        <item name="android:paddingTop">@dimen/spacing_large</item>
+        <item name="android:paddingBottom">@dimen/spacing_large</item>
+        <item name="android:clipToPadding">false</item>
+    </style>
+
+    <declare-styleable name="FloatLabelEditText">
+        <attr name="fitScreenWidth" format="enum">
+            <enum name="full" value="1" />
+            <enum name="half" value="2" />
+        </attr>
+        <attr name="gravity" format="enum">
+            <enum name="left" value="3" />
+            <enum name="right" value="5" />
+            <enum name="center" value="17" />
+        </attr>
+        <attr name="hint" format="string" />
+        <attr name="inputType" format="enum">
+            <enum name="normal" value="0" />
+            <enum name="textPassword" value="1" />
+            <enum name="textMultiLine" value="2" />
+            <enum name="textEmailAddress" value="3" />
+            <enum name="textPersonName" value="4" />
+            <enum name="textCapCharacters" value="5" />
+            <enum name="number" value="6" /> 
+            
+        </attr>
+        <attr name="text" format="string" />
+        <attr name="textSize" format="dimension" />
+        <attr name="textColorHintFocused" format="color" />
+        <attr name="textColorHintUnFocused" format="color" />
+    </declare-styleable>
+
+</resources>

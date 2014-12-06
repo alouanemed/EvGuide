@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.lpii.evma"
+    android:installLocation="preferExternal"
+    android:screenOrientation="portrait"
+    android:versionCode="1"
+    android:versionName="2.1" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".EvmaApp"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.Example" >
+        <activity
+            android:name="com.lpii.evma.view.HomeStart"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.lpii.evma.MainEv"
+            android:label="@string/app_name"
+            android:parentActivityName="com.lpii.evma.MainEv"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.lpii.evma.view.HomeStart" />
+        </activity>
+        <activity
+            android:name="com.lpii.evma.view.LoginEv"
+            android:label="@string/login"
+            android:parentActivityName="com.lpii.evma.MainEv" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.lpii.evma.view.HomeStart" />
+        </activity>
+        <activity
+            android:name="com.lpii.evma.view.SignUp"
+            android:label="@string/start_up_sign_up"
+            android:parentActivityName="com.lpii.evma.MainEv" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.lpii.evma.view.HomeStart" />
+        </activity>
+        <activity
+            android:name="com.lpii.evma.view.OrderBilletOverview"
+            android:label="@string/login"
+            android:parentActivityName="com.lpii.evma.MainEv" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.lpii.evma.MainEv" />
+        </activity>
+        <activity
+            android:name="com.lpii.evma.view.MyTicketQRCodes"
+            android:label="@string/drawer_menu_my_tickets"
+            android:parentActivityName="com.lpii.evma.MainEv" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.lpii.evma.view.HomeStart" />
+        </activity>
+        
+         <activity
+            android:name="com.lpii.evma.view.MyTicketForfaitsList"
+            android:label="@string/drawer_menu_my_tickets"
+            android:parentActivityName="com.lpii.evma.view.MyTicketQRCodes" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.lpii.evma.MainEv" />
+        </activity>
+        <activity
+            android:name="com.lpii.evma.view.organizer.OrganizerMainActivity"
+            android:label="@string/organizer_overview"
+            android:parentActivityName="com.lpii.evma.MainEv" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.lpii.evma.MainEv" />
+        </activity>
+        <activity
+            android:name="com.lpii.evma.view.user_my_tickets"
+            android:label="@string/organizer_overview"
+            android:parentActivityName="com.lpii.evma.MainEv" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.lpii.evma.view.HomeStart" />
+        </activity>
+        <activity
+            android:name="com.lpii.evma.view.OrderOverview"
+            android:label="@string/event_order_overview"
+            android:parentActivityName="com.lpii.evma.MainEv" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.lpii.evma.MainEv" />
+        </activity>
+        <activity
+            android:name="com.lpii.evma.view.EventDescriptionUI"
+            android:label="@string/login"
+            android:parentActivityName="com.lpii.evma.MainEv" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.lpii.evma.MainEv" />
+        </activity>
+        <activity
+            android:name="com.lpii.evma.view.Event_forfaits"
+            android:label="@string/event_offers"
+            android:parentActivityName="com.lpii.evma.view.EventDescriptionUI"
+            android:theme="@style/CustomTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.lpii.evma.MainEv" />
+        </activity>
+        <activity
+            android:name="com.lpii.evma.view.Event_Forfait_cmd"
+            android:label="@string/event_offers"
+            android:parentActivityName="com.lpii.evma.view.EventDescriptionUI"
+            android:theme="@android:style/Theme.Dialog" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.lpii.evma.view.EventDescriptionUI" />
+        </activity>
+    </application>
+
+</manifest>

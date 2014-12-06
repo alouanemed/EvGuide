@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Evma</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+     <string name="action_refresh">Refresh</string>
+    <string name="action_search">Search</string>
+    <string name="action_settings">Settings</string>
+    <string name="login">Login</string>
+    <string name="Password">Password</string>
+    <string name="Username">Username</string>
+    <string name="fontRoboto">Roboto-Thin</string>
+    <string name="form_is_valid">Form is valid</string>
+    <string name="failed_renderer">TextView Error</string>
+	<string name="Participer">Participer</string>
+    <string name="drawer_open">Drawer Open</string>
+    <string name="drawer_close">Drawer Close</string>
+    <string name="event_pack_offers">Reserver Votre Billet</string>
+    <string name="event_pack_ox">Free Pack</string>
+    <string name="orga_event_pack_offers">Offers</string>
+    <string name="event_description">Description</string>
+    <string name="event_packTotal_acheteur">Total acheteur : 0 MAD</string>
+    <string name="event_pack_ticket_price">Prix de Billet : 0 MAD</string>
+    <string name="event_pack_ticket_fees">Frais de service : 0 MAD</string>
+    <string name="event_Share">Partagez votre événement</string>
+    <string name="event_participant">Contacter</string>
+    <string name="order_payment_method">choisissez un mode de paiement</string>  
+    <string name="tab_messages">tab_messages</string>
+    <string name="tab_notifications">notifications</string>
+    <string name="oops_error">Ooops!</string>
+    
+    
+    
+    <string name="categories_" />
+    <string name="categories_title">Merci de selectionner minimum une categorie</string>
+    <string name="categories_submit">Continuer</string>
+    <string name="categories_add_categories">Add categories</string>
+    <string name="categories_selected">Selected</string>
+    <string name="add_categories_category">Category</string>
+    <string name="event_" />
+    
+    <string name="event_Assister">Assister</string>
+    <string name="event_titre">"Titre de l'evenement"</string>
+    <string name="event_date_hint">JJ/MM/AAAA</string>
+    <string name="event_Time_hint">HH:MM:SS AM/PM</string>
+    <string name="event_isVisible">visible</string>
+    <string name="event_isVisible">Public?</string>
+    <string name="event_isDisponible">Disponible</string>
+    <string name="event_over">Temrinée</string>
+    <string name="event_pack_add">Ajouter pack</string>
+    <string name="event_pack_show">Afficher les packs</string>
+    <string name="event_pack_add_free">Gratuit</string>
+    <string name="event_pack_add_paid">Payant</string>
+    <string name="event_create_next">Suivant</string>
+    <string name="event_pack_Title">titre de forfait</string>
+    <string name="event_pack_Description">Description</string>
+    <string name="event_pack_Debut_Vente_Date">Date debut des ventes</string>
+    <string name="event_pack_Debut_Vente_heur">Heur debut des ventes</string>
+    <string name="event_pack_Fin_Vente_Date">Date Fin des ventes</string>
+    <string name="event_pack_Fin_Vente_Heur">heur Fin des ventes</string>
+    <string name="event_pack_isVisible">visible</string>
+    <string name="event_pack_Qty">Nombre de billets</string>
+    <string name="event_pack_fees">fee</string>
+    <string name="event_pack_cm_dQty">Quantité</string>
+    <string name="event_pack_Price">Prix unitaire</string>
+    <string name="event_pack_organizerPay">Organizer Pay</string>
+    <string name="event_pack_ClientPay">Customer Pay</string>
+    <string name="event_offer_txt">Offer Gratuit</string>
+    <string name="event_details">Détails</string>
+    <string name="event_start_date">Début :</string>
+    <string name="event_start_datex">Date  </string>
+    <string name="event_date_hourx">Heur  </string>
+    <string name="event_date_start_and_hour">La date de debut et l\'heur de l\'ev.</string>
+    <string name="event_date_end_and_hour">La date de fin et l\'heur de l\'ev.</string>
+    <string name="event_end_date">Fin :</string>
+    <string name="event_location">Lieu :</string>
+    <string name="event_website">Site web :</string>
+    <string name="event_organizer">Organisateur</string>
+    <string name="event_offers">Offers</string>
+    <string name="event_menus_invite">Inviter un ami</string>
+    <string name="event_menus_add_to_calendar">Ajouter au calendrier</string>
+    <string name="event_order_ppl">Paypal</string>
+    <string name="event_order_cc">Credit Card</string>
+    <string name="event_order_sms">SMS</string>
+    <string name="event_order_ttl">Total à payer:</string>
+    <string name="event_order_fees">Tax:</string>
+    <string name="event_order_overview">Résumé du commande:</string>
+    <string name="event_order_print_ticket">Imprimer Billet</string>
+    <string name="event_order_download_ticket">Telechagrez votre Billet</string>
+    <string name="event_order_return">Back</string>
+    
+    <string name="claim_your_ticket">Demandez vore Billet</string>
+    <string name="event_order_success">La Réservation été effectué avec succès ,Un e-mail de confirmation vous a été envoyé</string>
+     <string name="ticket_view_activity_no_mobile_ticket">No Tickets</string>
+    <string name="organizer_overview">Overview</string>
+    <string name="organizer_event_title">Overview</string>
+    <string name="organizer_infos">Infos</string>
+    <string name="organizer_attendees">attendees</string>
+    <string name="organizer_Forfaits">forfait</string>
+    <string name="organizer_Forfaits_empty">Aucun Forfaits pour cette evenement!</string>
+    <string name="organizer_Forfaits_create">Ajouter un forfait!</string>
+    
+
+
+
+	
+	
+	
+	
+	<string name="home_" />
+    <string name="discover_" >Découvrir</string>
+    <string name="discover_a_name">Google I/O 2014</string>
+    <string name="ev_title_ex">"My wow Event "</string>
+     <string name="login_" />
+    <string name="login_logo_cd">logo</string>
+    <string name="login_linkedin_connect">LinkedIn connect</string>
+    <string name="login_fb_connect">Facebook connect</string>
+    <string name="login_label_email">"Nom d'utilisateur / email"</string>
+    <string name="login_label_pwd">Mot de passe</string>
+    <string name="login_btn_log_in">Se connecter</string>
+    <string name="login_forgot_password">Mot de passe oublié?</string>
+    <string name="login_fetching_user_data_wait">Authentification en cours…</string>
+    <string name="login_authenticated_as">Authenticated as %s.</string>
+    <string name="login_no_user_found">No user found!</string>
+    <string name="login_connecting">Connecting…</string>
+    <string name="login_select_a_service">"Connectez vous !"</string>
+    <string name="login_or">Ou</string>
+    <string name="login_faillure">"Nom d'utilisateur ou adresse e-mail non valide. Veuillez réessayer."</string>
+    <string name="login_validation_error_email">"Entrez votre nom d'utilisateur ou votre adresse e-mail."</string>
+    <string name="login_validation_error_password">Votre mot de passe doit contenir au moins 6 caractères. Veuillez en essayer un autre.</string>
+    <string name="menu_" />
+    <string name="menu_explore">Rechercher</string>
+    <string name="menu_manage_selection">Gérer mes catégories</string>
+    <string name="menu_find_friends">Retrouver des amis</string>
+    <string name="menu_settings">Paramètres</string>
+    <string name="menu_feedback">Vos feedbacks</string>
+    <string name="menu_help">Aide</string>
+    <string name="menu_user_not_found">Le profile est introuvable ! Veuillez réessayer plus tard.</string>
+    <string name="menu_username">Mohamed Alouane</string>
+   	<string name="drawer_menu_saved_events">Saved events</string>
+   	<string name="drawer_menu_my_tickets">Mes Billets</string>
+   	
+    
+     
+    <string name="my_contacts_" /> 
+     <string name="invite_my_contacts_user_name">"Nom de l'utilisateur"</string>
+     <string name="invite_my_contacts_sent">Envoyé</string>
+       
+    <string name="sign_up_" />
+    <string name="sign_up_full_name">NOM COMPLET</string>
+    <string name="sign_up_first_name">First name</string>
+    <string name="sign_up_last_name">Last name</string>
+    <string name="sign_up_user_name">"NOM D'UTILISATEUR"</string>
+    <string name="sign_up_birthday">Date de naissance</string>
+    
+    <string name="sign_up_email">Email</string>
+    <string name="sign_up_email_hint">exemple@exemple.com</string>
+    <string name="sign_up_password">Mot de passe</string>
+    <string name="sign_up_re_password">Ressaisir nouveau mot de passe</string>
+    <string name="edit_password_confirmation">Votre nouveau mot de passe a été sauvegardé !</string>
+    <string name="edit_password_error">Erreur:</string>
+    <string name="sign_up_current_password">Mot de passe actuel</string>
+    <string name="sign_up_new_password">Nouveau mot de passe</string>
+    <string name="edit_profile_bio">Biographie</string>
+    <string name="edit_profile_bio_hint">Biographie (140 caractères maximum)</string>
+     
+    <string name="start_up_" />
+    <string name="start_up_login">Se connecter</string>
+    <string name="start_up_sign_up">Créer un compte</string>
+    <string name="start_up_take_a_tour">take a tour</string>
+    <string name="start_up_logo_cd">logo</string>
+    <string name="svc_name">EV Service</string>
+    <string name="empty" />
+    <string name="action_settings">Paramètres</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_start">Start</string>
+    <string name="title_activity_login">Login</string>
+    <string name="error_inet_error">"Erreur réseau!
+Veuillez vérifier que vous êtes connecté à internet!"</string>
+    <string name="error_date_time_error">"Erreur d'horloge!
+Veuillez vérifier que la date, heure et fuseau horaire de votre portable sont corrects!"</string>
+    <string name="title_activity_sign_up">Créer un compte</string>
+    <string name="title_activity_tour">Take a tour</string>
+    <string name="app_id">501764103249217</string>
+    <string name="title_activity_categories">Categories</string>
+    <string name="title_activity_add_cities">Add Other Cities</string>
+    <string name="title_activity_linkedin_callee">Authentification Linkedin</string>
+    <string name="title_activity_twitter_callee">Authentification Twitter</string>
+    <string name="title_activity_facebook_callee">Authentification Facebook</string>
+    <string name="title_activity_discover">EV</string>
+    <string name="title_activity_explore">Rechercher sur EV</string>
+    <string name="title_activity_fragmented_login_register">FragmentedLoginRegisterActivity</string>
+    <string name="title_activity_forgotpassword">ForgotpasswordActivity</string>
+    <string name="title_activity_event">EventActivity</string>
+    <string name="title_activity_organizer_profile">OrganizerProfileActivity</string>
+    <string name="title_activity_venue">VenueActivity</string>
+    <string name="title_activity_my_profile">MyProfileActivity</string>
+    <string name="title_activity_user_profile">Profil</string>
+    <string name="title_activity_event_comments">Commentaires</string>
+     <string name="title_activity_organizer_contact_list">Abonnés</string>
+     <string name="title_activity_my_subscriptions">Manage subscriptions</string>
+    <string name="title_activity_feedback">Feedback</string>
+    <string name="title_activity_invite_to_event">Inviter à un événement</string>
+    <string name="title_activity_invite_friends_to_event">Invitez vos amis</string>
+    <string name="title_activity_my_settings">Paramètres de notification</string>
+    <string name="title_activity_block_list">Block Liste</string>
+    <string name="title_activity_notification_settings">Paramètres de notification</string>
+    <string name="title_activity_user_activity">Activités</string>
+    <string name="title_activity_organizer_activity">Activités</string>
+    <string name="title_activity_push_notifications">Notifications</string>
+    <string name="title_activity_edit_my_profile">Editer votre profil</string>
+    <string name="title_activity_edit_password">Editer mot de passe</string>
+     <string name="title_activity_general_settings">Paramètres</string>
+ 
+    <string name="app_description">Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum .</string>
+    
+    <string name="btn_get_it">Get It</string>
+    <string name="btn_other_apps">Other Apps</string>
+    <string name="btn_share">Share</string>
+    <string name="btn_tell_friend">Tell a Friend</string>
+    <string name="btn_rate_app">Rate App</string>
+    <string name="no_connection">No connection: Cannot request location</string>
+    <string name="tab_deal_list">List</string>
+    <string name="tab_deal_map">Map</string>
+    <string name="claim">Claim This Deal</string>
+    <string name="lbl_result">Result</string>
+    <string name="lbl_no_result">No Result</string>
+    <string name="lbl_share_to">Share to:</string>
+    <string name="lbl_date_end">End Date:</string>
+    <string name="lbl_date_start">Start Date:</string>
+    <string name="lbl_Tickets_Solde">Vendus</string>
+    <string name="lbl_orga_last_paritcipant">Derniers</string>
+    <string name="lbl_Tickets_Pending">En suspens</string>
+    <string name="lbl_Tickets_available">Disponible</string>
+    <string name="loading_data">Loading data…</string>
+    <string name="hint_search">Type Name</string>
+    <string name="hint_share">What do you think ?</string>
+    <string name="page_around_you">Around You</string>
+    <string name="page_category">Category</string>
+    <string name="page_deals_list">Deals List</string>
+    <string name="page_setting">Settings</string>
+    <string name="page_search">Search</string>
+    <string name="page_detail">Detail</string>
+    <string name="page_share">Share</string>
+    <string name="page_about">About</string>
+    <string name="chk_facebook">Facebook</string>
+    <string name="chk_twiiter">Twiiter</string>
+    <string name="preferences_type">preferenceType</string>
+    <string name="preferences_zoom">preferenceZoom</string>
+    <string name="internet_alert">No connection. Please enable your internet connection.</string>
+    <string name="address_output_string">%1$s %2$s %3$s</string>
+    <string name="social">Social</string>
+    <string name="facebook">Facebook</string>
+    <string name="twitter">Twitter</string>
+    <string name="help">Help</string>
+    <string name="map">Map</string>
+    <string name="view_type">View Type</string>
+    <string name="default_zoom">Default Zoom</string>
+    <string name="preferences_facebook">preferenceFacebook</string>
+    <string name="preferences_twitter">preferenceTwitter</string>
+    <string name="preferences_overlay">preferenceOverlay</string>
+    <string name="get_position">Getting user position …</string>
+    <string name="latitude_longitude">%1$.8f, %2$.8f</string>
+    <string name="zoom_summary">%1$d</string>
+    <string name="zoom_dialog_title">Default Zoom</string>
+    <string name="overlay_title">Activated Overlay</string>
+    <string name="direction">Direction</string>
+    <string name="direction_alert">Improve the accuracy of your location by turning on GPS.</string>
+    <string name="no_route">Unable to get route</string>
+    <string name="loading_route">Loading route. Please wait …</string>
+    <string name="settings">Settings</string>
+    <string name="notice">Notice</string>
+    <string name="cannot_get_address">Cannot get location address</string>
+    <string name="confirm">Confirmer</string>
+    <string name="Annuler">Annuler</string>
+    <string name="signout">Déconnecter</string> 
+    <string name="no_name">No Name</string>
+    <string name="connect_twitter">Connected to Twitter as</string>
+    <string name="connect_twitter_failed">Twitter connection failed</string>
+    <string name="delete_twitter_connection">Delete current Twitter connection?</string>
+    <string name="post_to_twitter">Posted to Twitter</string>
+    <string name="post_to_twitter_failed">Post to Twitter failed</string>
+    <string name="post_limit">Post is more than 140 character</string>
+    <string name="post_review">Review posted</string>
+    
+</resources>

@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffe8e8e8" >
+
+    <LinearLayout
+        android:id="@+id/event_description_l"
+        android:layout_width="fill_parent"
+        android:layout_height="518dp"
+        android:background="#fff1f1f1"
+         android:layout_marginTop="@dimen/padding_main_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/event_desc_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tvEventTitle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:lineSpacingExtra="4.0dip"
+            android:padding="12.0dip"
+            android:text="@string/ev_title_ex"
+            android:textColor="#ff4c626f"
+            android:textSize="22.0sp"
+            android:typeface="sans" />
+         
+
+        <Button
+            android:id="@+id/AssisterBtn"
+            android:layout_width="fill_parent"
+            android:layout_height="48.0dip"
+            android:layout_margin="16.0dip"
+            android:background="@drawable/btn_finish_rd_checked"
+            android:onClick="unAttendEvent"
+            android:paddingRight="37.0dip"
+            android:text="@string/event_Assister"
+            android:textAllCaps="true"
+            android:textColor="#ffffffff"
+            android:textSize="20.0sp"
+            android:visibility="gone" />
+
+        <!-- <Button
+            android:id="@+id/AssisterForfaitBtn"
+            android:layout_width="fill_parent"
+            android:layout_height="48.0dip"
+            android:layout_margin="16.0dip"
+            android:background="@drawable/btn_finish_rd"
+            android:text="@string/event_Assister"
+            android:textAllCaps="true"
+            android:textColor="#ffffffff"
+            android:textSize="20.0sp"
+            android:visibility="visible" /> -->
+
+        <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/event_header_bg"
+                android:gravity="center_vertical"
+                android:padding="12.0dip"
+                android:text="@string/event_pack_offers"
+                android:textColor="#ff323435"
+                android:textSize="14.0sp" 
+                 />
+        <LinearLayout
+            android:id="@+id/Nopackshowly"
+            android:layout_width="fill_parent"
+            android:layout_height="174dp"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/empty"
+                android:src="@drawable/no_users" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:gravity="left|center"
+                android:padding="8.0dip"
+                android:text="@string/organizer_Forfaits_empty"
+                android:textColor="#ff5a5a5a"
+                android:textSize="14.0sp" />
+        </LinearLayout>
+         <LinearLayout
+            android:id="@+id/packshowly"
+            android:layout_width="fill_parent"
+            android:layout_height="174dp"
+            android:orientation="vertical"
+           >
+ 
+			  
+            <include
+                android:id="@+id/incforfaitlist"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                layout="@layout/event_forfait_listv" />
+        </LinearLayout>
+        
+        <!-- <LinearLayout
+            android:id="@+id/packshowly"
+            android:layout_width="fill_parent"
+            android:layout_height="194dp"
+             android:layout_marginTop="@dimen/padding_main_content"
+            android:orientation="vertical" >
+ 
+
+            <LinearLayout
+                android:id="@+id/packsIncly"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <ListView
+                    android:id="@android:id/list"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:visibility="visible" />
+            </LinearLayout>
+ 
+        </LinearLayout> -->
+		
+            <!-- <Button
+                android:id="@+id/AssisterForfaitBtn"
+                android:layout_width="fill_parent"
+                android:layout_height="48.0dip"
+                 android:background="@drawable/btn_finish_rd"
+                android:text="@string/event_Assister"
+                android:textAllCaps="true"
+                android:textColor="#ffffffff"
+                android:textSize="20.0sp"
+                android:visibility="visible" /> -->
+        <!--
+        <Button
+            android:id="@+id/checkInBtn"
+            android:layout_width="fill_parent"
+            android:layout_height="48.0dip"
+            android:layout_margin="16.0dip"
+            android:background="@drawable/btn_j_y_serais_checked"
+            android:onClick="checkInEvent"
+            android:paddingRight="50.0dip"
+            android:text="@string/event_j_y_suis"
+            android:textAllCaps="true"
+            android:textColor="#ffffffff"
+            android:textSize="20.0sp"
+            android:visibility="visible" />
+        -->
+
+        <Button
+            android:id="@+id/checkOutBtn"
+            android:layout_width="fill_parent"
+            android:layout_height="48.0dip"
+            android:layout_margin="16.0dip"
+            android:background="@drawable/btn_finish_rd_checked"
+            android:onClick="checkOutEvent"
+            android:paddingRight="37.0dip"
+            android:text="@string/event_Assister"
+            android:textAllCaps="true"
+            android:textColor="#ffffffff"
+            android:textSize="20.0sp"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/eventIsOverBtn"
+            android:layout_width="fill_parent"
+            android:layout_height="48.0dip"
+            android:layout_margin="16.0dip"
+            android:background="#fffa565a"
+            android:paddingRight="37.0dip"
+            android:text="@string/event_over"
+            android:textAllCaps="true"
+            android:textColor="#ffffffff"
+            android:textSize="14.0sp"
+            android:visibility="gone" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="40.0dip"
+            android:background="@drawable/event_header_bg"
+            android:layout_marginTop="5dip"
+            android:gravity="center_vertical"
+            android:padding="12.0dip"
+            android:text="@string/event_details"
+            android:textColor="#ff323435"
+            android:textSize="14.0sp" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="40.0dip"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40.0dip"
+                android:background="@drawable/event_info_bg"
+                android:gravity="center_vertical"
+                android:padding="12.0dip"
+                android:text="@string/event_start_date"
+                android:textColor="#ff4c626f"
+                android:textSize="14.0sp" />
+
+            <TextView
+                android:id="@+id/TveventDDebut"
+                android:layout_width="0.0dip"
+                android:layout_height="40.0dip"
+                android:layout_weight="1.0"
+                android:background="@drawable/event_info_bg"
+                android:gravity="center_vertical"
+                android:paddingBottom="12.0dip"
+                android:paddingLeft="0.0dip"
+                android:paddingRight="12.0dip"
+                android:paddingTop="12.0dip"
+                android:text="Samedi 1er Fevrier 2013  -  18h30 GMT"
+                android:textColor="#ff36383a"
+                android:textSize="14.0sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="40.0dip"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40.0dip"
+                android:background="@drawable/event_info_bg"
+                android:gravity="center_vertical"
+                android:padding="12.0dip"
+                android:text="@string/event_end_date"
+                android:textColor="#ff4c626f"
+                android:textSize="14.0sp" />
+
+            <TextView
+                android:id="@+id/TveventDateFinTV"
+                android:layout_width="0.0dip"
+                android:layout_height="40.0dip"
+                android:layout_weight="1.0"
+                android:background="@drawable/event_info_bg"
+                android:gravity="center_vertical"
+                android:paddingBottom="12.0dip"
+                android:paddingLeft="0.0dip"
+                android:paddingRight="12.0dip"
+                android:paddingTop="12.0dip"
+                android:text="Samedi 1er Fevrier 2017  -  18h30 GMT"
+                android:textColor="#ff36383a"
+                android:textSize="14.0sp" />
+        </LinearLayout>
+
+         
+        <LinearLayout
+            android:id="@+id/websiteLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/clickable_infos_inv_states"
+            android:clickable="true"
+            android:orientation="horizontal" >
+
+            <TextView
+            android:id="@+id/tvEventDescriptionpage"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:lineSpacingExtra="4.0dip"
+            android:padding="12.0dip"
+            android:text="@string/app_description"
+            android:textColor="#ff4c626f"
+            android:textSize="18.0sp"
+            android:typeface="sans" />
+        </LinearLayout>
+        
+
+        <LinearLayout
+            android:id="@+id/socialMediaLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="60.0dip"
+            android:background="@drawable/event_light_clickable_info_"
+            android:gravity="right"
+            android:padding="16.0dip"
+            android:visibility="gone" >
+
+            <ImageView
+                android:id="@+id/eventFBPage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4.0dip"
+                android:layout_marginRight="4.0dip"
+                android:clickable="true"
+                android:contentDescription="@string/empty"
+                android:src="@drawable/fb_icon"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/eventTwitterPage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4.0dip"
+                android:layout_marginRight="4.0dip"
+                android:clickable="true"
+                android:contentDescription="@string/empty"
+                android:src="@drawable/twitter_icon"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/eventGPlusPage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4.0dip"
+                android:layout_marginRight="4.0dip"
+                android:clickable="true"
+                android:contentDescription="@string/empty"
+                android:src="@drawable/gplus_icon"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/eventYoutubePage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4.0dip"
+                android:layout_marginRight="4.0dip"
+                android:clickable="true"
+                android:contentDescription="@string/empty"
+                android:src="@drawable/youtube_icon"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/organizerTitleLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="40.0dip"
+            android:background="@drawable/event_header_bg"
+            android:gravity="center_vertical"
+            android:paddingBottom="2.0dip"
+            android:paddingLeft="12.0dip"
+            android:paddingTop="2.0dip"
+            android:text="@string/event_organizer"
+            android:textColor="#ff323435"
+            android:textSize="14.0sp" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/clickable_infos_states"
+            android:clickable="true"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="60.0dip"
+                android:contentDescription="organisateur pic"
+                android:focusable="false"
+                android:gravity="center_vertical"
+                android:src="@drawable/user_smile_icon" />
+
+            <TextView
+                android:id="@+id/_tvOrganisateur"
+                android:layout_width="0.0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:drawablePadding="12.0dip"
+                android:gravity="center_vertical"
+                android:text="Ev"
+                android:textColor="#ff36383a"
+                android:textSize="14.0sp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="40.0dip"
+            android:background="@drawable/event_header_bg"
+            android:gravity="center_vertical"
+            android:padding="12.0dip"
+            android:text="Contact"
+            android:textColor="#ff323435"
+            android:textSize="14.0sp" />
+
+            <!--
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="60.0dip"
+            android:background="@drawable/add_comment_bg"
+            android:gravity="right|center"
+            android:orientation="horizontal"
+            android:padding="0.0dip" >
+ 
+ 
+             <ListView
+                android:id="@android:id/list"
+                android:layout_width="wrap_content"
+                android:layout_height="218dp" />
+
+             <TextView
+                android:id="@+id/tvOfferevent"
+                android:layout_width="0.0dip"
+                android:layout_height="48.0dip"
+                android:layout_marginLeft="12.0dip"
+                android:layout_weight="1.0"
+                android:background="@drawable/abc_ab_stacked_solid_light_holo"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:text="@string/event_offer_txt"
+                android:paddingLeft="16.0dip"
+                android:singleLine="true"
+                android:textColor="#ff5e5e5e"
+                android:textSize="14.0sp" />
+         
+
+        </LinearLayout>    -->
+    </LinearLayout>
+
+</ScrollView>

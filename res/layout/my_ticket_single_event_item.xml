@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/Background_main"
+    android:paddingLeft="@dimen/padding_main"
+    android:paddingRight="@dimen/padding_main"
+    android:paddingTop="@dimen/padding_main" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-5.0dip"
+        android:background="@drawable/event_details_section_background"
+        android:paddingBottom="10.0dip" >
+
+        <ImageView
+            android:id="@+id/imageview_barcode_image"
+            android:layout_width="180.0dip"
+            android:layout_height="170.0dip"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5.0dip"
+            android:scaleType="fitCenter"
+            android:src="@drawable/barcode_sample" />
+
+        <ImageView
+            android:id="@+id/imageview_barcode_stamp"
+            android:layout_width="40.0dip"
+            android:layout_height="50.0dip"
+            android:layout_below="@+id/imageview_barcode_image"
+            android:layout_marginLeft="-53.0dip"
+            android:layout_marginTop="-53.0dip"
+            android:layout_toRightOf="@+id/imageview_barcode_image"
+            android:src="@drawable/my_plans_attending" />
+
+        <TextView
+            android:id="@+id/textview_barcode_attendee_name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageview_barcode_image"
+            android:layout_marginLeft="@dimen/shadow_width"
+            android:layout_marginRight="@dimen/shadow_width"
+            android:gravity="center"
+            android:text="Mohaled Alouane"
+            android:textColor="@color/ct_dark_gray"
+            android:textSize="18.0sp" />
+
+        <TextView
+            android:id="@+id/textview_barcode_ticket_name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textview_barcode_attendee_name"
+            android:layout_marginLeft="@dimen/shadow_width"
+            android:layout_marginRight="@dimen/shadow_width"
+            android:layout_marginTop="2.0dip"
+            android:ellipsize="middle"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="General Admission"
+            android:textColor="@color/light_title"
+            android:textSize="18.0sp" />
+
+        <!--
+                 <Button
+                android:id="@+id/button_barcode_next"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_alignBottom="@+id/textview_barcode_ticket_name"
+                android:layout_alignLeft="@+id/view_barcode_center_point"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:background="@null"
+                android:drawableRight="@drawable/barcode_arrow_right"
+                android:paddingRight="@dimen/shadow_width" />
+        -->
+
+
+        <!--
+                 <Button
+                android:id="@+id/button_barcode_prev"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_alignBottom="@+id/textview_barcode_ticket_name"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignRight="@+id/view_barcode_center_point"
+                android:background="@null"
+                android:drawableLeft="@drawable/barcode_arrow_left"
+                android:paddingLeft="@dimen/shadow_width" />
+        -->
+
+        <Button
+            android:id="@+id/button_barcode_claim"
+            style="@style/flatGreenButtonStyle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:paddingLeft="@dimen/shadow_width"
+            android:text="@string/claim_your_ticket"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</RelativeLayout>

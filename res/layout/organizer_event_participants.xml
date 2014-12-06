@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- <Button
+        android:id="@+id/btngetParticipants"
+        android:layout_width="fill_parent"
+        android:layout_height="48.0dip"
+        android:layout_margin="7.0dip"
+        android:background="@drawable/btn_finish_rd"
+        android:paddingRight="37.0dip"
+        android:text="@string/event_order_return"
+        android:textAllCaps="true"
+        android:textColor="#ffffffff"
+        android:textSize="18.0sp" /> -->
+
+    <include
+        android:id="@+id/incforfaitlist"
+        android:layout_width="fill_parent"
+        android:layout_height="324dp"
+        layout="@layout/event_forfait_listv" />
+
+</LinearLayout>

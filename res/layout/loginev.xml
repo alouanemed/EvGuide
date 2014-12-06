@@ -1,0 +1,94 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e8e8e8"
+    android:scrollbarAlwaysDrawVerticalTrack="true"
+    android:scrollbarStyle="outsideInset"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".LoginEv" xmlns:android1="http://schemas.android.com/apk/res/android">
+    
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="465dp"
+        android:orientation="vertical" >
+    
+    <ImageView
+        android1:id="@+id/iimgUser"
+        android1:layout_width="wrap_content"
+        android1:layout_height="wrap_content"
+        android1:layout_alignBottom="@+id/etUsername"
+        android1:layout_alignLeft="@+id/mgPw"
+        android1:layout_alignRight="@+id/etUsername"
+        android1:layout_alignTop="@+id/etUsername"
+        android1:src="@drawable/ic_action_person" android1:contentDescription="@string/login"/>
+
+    <ImageView
+        android1:id="@+id/mgPw"
+        android1:layout_width="wrap_content"
+        android1:layout_height="wrap_content"
+        
+        android1:layout_alignRight="@+id/etPassword"
+        android1:layout_alignTop="@+id/etPassword"
+        android1:src="@drawable/ic_action_secure" android1:contentDescription="@string/login"/>
+
+    <EditText
+        android1:id="@+id/etUsername"
+        android1:layout_width="match_parent"
+        android1:layout_height="wrap_content"
+        android1:layout_above="@+id/mgPw"
+        android1:layout_alignLeft="@+id/etPassword"
+        android1:layout_alignRight="@+id/btnLoginCheck"
+        android1:layout_marginBottom="17dp"
+        android:background="@drawable/login_bg"
+        android1:ems="10"
+        android1:fontFamily="@string/fontRoboto"
+        android1:hint="@string/Username"
+        android1:inputType="text"
+        android1:padding="10dp"
+        android1:textColor="#555555" />
+
+    <ImageView
+        android1:id="@+id/imageView1"
+        android1:layout_width="wrap_content"
+        android1:layout_height="150dp"
+        android1:layout_alignParentLeft="true"
+        android1:layout_alignParentTop="true"
+        android1:layout_marginTop="15dp"
+        android1:contentDescription="@string/login"
+        android1:src="@drawable/ic_launcherxx" />
+
+    <EditText
+        android1:id="@+id/etPasswordx"
+        android1:layout_width="match_parent"
+        android1:layout_height="wrap_content"
+        android1:layout_alignParentLeft="true"
+        android1:layout_alignParentRight="true"
+        android1:layout_below="@+id/imageView1"
+        android1:layout_marginTop="126dp"
+        android:background="@drawable/pwd_bg"
+         android1:hint="@string/Password"
+        android1:inputType="textPassword"
+        android1:padding="10dp" >
+
+     </EditText>
+
+    <ImageButton
+        android1:id="@+id/btnLoginCheck"
+        android1:layout_width="match_parent"
+        android1:layout_height="50dp"
+        android1:layout_alignParentLeft="true"
+        android1:layout_below="@+id/mgPw"
+        android1:layout_marginTop="34dp"
+        android1:background="@drawable/button_style"
+        android1:contentDescription="@string/login"
+        android1:paddingLeft="120dp"
+        android1:paddingRight="120dp"
+        android1:src="@drawable/ic_action_done"
+        android1:textAlignment="center" />
+
+    </RelativeLayout>
+</ScrollView>

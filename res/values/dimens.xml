@@ -1,0 +1,112 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="flet_hint_text_size">11sp</dimen>
+    <dimen name="flet_hint_text_padding_horizontal">13dp</dimen>
+	 <dimen name="abs__config_prefDialogWidth">320.0dip</dimen>
+    <dimen name="abs__action_bar_default_height">48.0dip</dimen>
+    <dimen name="abs__action_bar_icon_vertical_padding">8.0dip</dimen>
+    <dimen name="abs__action_bar_title_text_size">18.0dip</dimen>
+    <dimen name="abs__action_bar_subtitle_text_size">14.0dip</dimen>
+    <dimen name="abs__action_bar_subtitle_top_margin">-3.0dip</dimen>
+    <dimen name="abs__action_bar_subtitle_bottom_margin">5.0dip</dimen>
+    <dimen name="abs__action_button_min_width">56.0dip</dimen>
+    <dimen name="abs__dropdownitem_text_padding_left">8.0dip</dimen>
+    <dimen name="abs__dropdownitem_text_padding_right">8.0dip</dimen>
+    <dimen name="abs__dropdownitem_icon_width">32.0dip</dimen>
+    <dimen name="abs__search_view_text_min_width">160.0dip</dimen>
+    <dimen name="abs__search_view_preferred_width">320.0dip</dimen>
+    <dimen name="padding_main">8.0dip</dimen>
+    <dimen name="padding_main_content">10.0dip</dimen>
+    <dimen name="shadow_width">15.0dip</dimen>
+    <dimen name="menu_offset">60.0dip</dimen>
+    <dimen name="margin_menu">10.0dip</dimen>
+    <dimen name="margin_top_home_deal">138.0dip</dimen>
+    <dimen name="margin_top_home_start_deal">7.0dip</dimen>
+    <dimen name="margin_top_title">7.0dip</dimen>
+    <dimen name="margin_left_home_deal">10.0dip</dimen>
+    <dimen name="margin_top">10.0dip</dimen>
+    <dimen name="margin_share">10.0dip</dimen>
+    <dimen name="padding_menu_list_row">10.0dip</dimen>
+    <dimen name="padding_detail_price">6.0dip</dimen>
+    <dimen name="padding_search">10.0dip</dimen>
+    <dimen name="padding_detail_info">10.0dip</dimen>
+    <dimen name="padding_detail_content_bottom">65.0dip</dimen>
+    <dimen name="padding_detail_btn_content_left">18.0dip</dimen>
+    <dimen name="padding_detail_btn_content_top">4.0dip</dimen>
+    <dimen name="thumb_height">170.0dip</dimen>
+    <dimen name="padding_menu">10.0dip</dimen>
+    <dimen name="thumb_margin_right">10.0dip</dimen>
+    <dimen name="splash_padding_left">30.0dip</dimen>
+    <dimen name="splash_padding_right">30.0dip</dimen>
+    <dimen name="progress_width">180.0dip</dimen>
+    <dimen name="padding_zoom">20.0dip</dimen>
+    <dimen name="margin_zoom_seekbar">10.0dip</dimen>
+    <dimen name="line_height">1.0dip</dimen>
+    <dimen name="marker_size">36.0dip</dimen>
+     <dimen name="animated_logo_view_height">29.0dip</dimen>
+    <dimen name="animated_logo_view_width">270.0dip</dimen>
+    <dimen name="aztec_size">128.0dip</dimen>
+    <dimen name="bar_size_medium">48.0dip</dimen>
+    <dimen name="com_facebook_loginview_compound_drawable_padding">12.0dip</dimen>
+    <dimen name="com_facebook_loginview_padding_bottom">12.0dip</dimen>
+    <dimen name="com_facebook_loginview_padding_left">12.0dip</dimen>
+    <dimen name="com_facebook_loginview_padding_right">16.0dip</dimen>
+    <dimen name="com_facebook_loginview_padding_top">12.0dip</dimen>
+    <dimen name="com_facebook_loginview_text_size">16.0sp</dimen>
+    <dimen name="com_facebook_picker_place_image_size">64.0dip</dimen>
+    <dimen name="com_facebook_profilepictureview_preset_size_large">180.0dip</dimen>
+    <dimen name="com_facebook_profilepictureview_preset_size_normal">100.0dip</dimen>
+    <dimen name="com_facebook_profilepictureview_preset_size_small">50.0dip</dimen>
+    <dimen name="com_facebook_usersettingsfragment_profile_picture_height">64.0dip</dimen>
+    <dimen name="com_facebook_usersettingsfragment_profile_picture_width">64.0dip</dimen>
+    <dimen name="config_prefDialogWidth">320.0dip</dimen>
+    <dimen name="divider_huge">16.0dip</dimen>
+    <dimen name="divider_large">2.0dip</dimen>
+    <dimen name="divider_medium">1.0dip</dimen>
+    <item type="dimen" name="divider_section_bottom">@dimen/divider_large</item>
+    <item type="dimen" name="divider_section_top">@dimen/divider_medium</item>
+    <dimen name="font_size_large">22.0sp</dimen>
+    <dimen name="font_size_medium">18.0sp</dimen>
+    <dimen name="font_size_medium_dp">18.0dip</dimen>
+    <dimen name="font_size_medium_large">20.0sp</dimen>
+    <dimen name="font_size_medium_small_dp">16.0dip</dimen>
+    <dimen name="font_size_micro">12.0sp</dimen>
+    <dimen name="font_size_micro_dp">12.0dip</dimen>
+    <dimen name="font_size_nano">10.0sp</dimen>
+    <dimen name="font_size_small">14.0sp</dimen>
+    <dimen name="font_size_small_dp">14.0dip</dimen>
+    <item type="dimen" name="form_field_height">@dimen/grid_size_large</item>
+    <dimen name="grid_size_100p">48.0dip</dimen>
+    <dimen name="grid_size_200p">96.0dip</dimen>
+    <dimen name="grid_size_50p">24.0dip</dimen>
+    <dimen name="grid_size_75p">36.0dip</dimen>
+    <dimen name="grid_size_extra_huge">320.0dip</dimen>
+    <dimen name="grid_size_huge">180.0dip</dimen>
+    <dimen name="grid_size_huge_large">280.0dip</dimen>
+    <dimen name="grid_size_large">64.0dip</dimen>
+    <dimen name="grid_size_medium">48.0dip</dimen>
+    <dimen name="grid_size_medium_large">56.0dip</dimen>
+    <dimen name="grid_size_micro">24.0dip</dimen>
+    <dimen name="grid_size_small">32.0dip</dimen>
+    <item type="dimen" name="list_item_min_height_large">@dimen/grid_size_large</item>
+    <item type="dimen" name="list_item_min_height_medium">@dimen/grid_size_medium</item>
+    <item type="dimen" name="progress_bar_size">@dimen/grid_size_micro</item>
+    <dimen name="search_item_prices_width">160.0dip</dimen>
+    <dimen name="spacing_huge">32.0dip</dimen>
+    <dimen name="spacing_large">16.0dip</dimen>
+    <item type="dimen" name="spacing_logo_tuto">@dimen/spacing_medium_large</item>
+    <dimen name="spacing_medium">8.0dip</dimen>
+    <dimen name="spacing_medium_large">12.0dip</dimen>
+    <dimen name="spacing_micro">2.0dip</dimen>
+    <dimen name="spacing_small">4.0dip</dimen>
+    <dimen name="spacing_very_huge">48.0dip</dimen>
+    <dimen name="train_number_width">56.0dip</dimen>
+    <dimen name="trip_pole_min_segment_height">4.0dip</dimen>
+    <dimen name="trip_pole_radii">4.0dip</dimen>
+    <dimen name="trip_pole_stroke_width">1.0dip</dimen>
+    <dimen name="trip_pole_width">8.0dip</dimen>
+    <dimen name="zone_option_height">18.0dip</dimen>
+</resources>

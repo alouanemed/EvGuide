@@ -1,0 +1,453 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:floatlabel="http://schemas.android.com/apk/res-auto"
+    style="@style/Form"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffe8e8e8" >
+
+    <LinearLayout
+        android:id="@+id/organizer_event_create"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center_horizontal"
+        android:background="#ffe8e8e8"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:baselineAligned="false"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="7.0"
+                android:orientation="vertical"
+                android:padding="0.0dip" >
+
+                <com.lpii.evma.view.FloatLabelEditText
+                    android:id="@+id/etOrgaEventTitle"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dip"
+                    android:gravity="bottom"
+                    android:inputType="textCapWords"
+                    android:maxLength="50"
+                    android:paddingBottom="4.0dip"
+                    android:paddingLeft="6.0dip"
+                    android:paddingRight="6.0dip"
+                    android:paddingTop="4.0dip"
+                    android:text="@string/event_titre"
+                    android:textColor="#ff5e5e5e"
+                    android:textSize="14.0sp"
+                    floatlabel:fitScreenWidth="full"
+                    floatlabel:hint="@string/event_titre"
+                    floatlabel:inputType="textMultiLine"
+                    floatlabel:textColorHintFocused="@color/ct_green_10p"
+                    floatlabel:textColorHintUnFocused="@color/ct_orange"
+                    floatlabel:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/OrgaimgThumbnail"
+                    android:layout_width="fill_parent"
+                    android:layout_height="138dp"
+                    android:layout_marginBottom="10dip"
+                    android:contentDescription="@string/app_name"
+                    android:scaleType="centerCrop"
+                     android:clickable="true"
+                    android:src="@drawable/defaultcoverx" />
+
+                <!--
+                     <EditText
+                    android:id="@+id/EtEvent"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40.0dip"
+                    android:layout_marginBottom="4.0dip"
+                    android:layout_marginLeft="8.0dip"
+                    android:layout_marginRight="8.0dip"
+                    android:layout_marginTop="4.0dip"
+                    android:background="@drawable/text_field_bg"
+                    android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890-_"
+                    android:gravity="bottom"
+                    android:inputType="textCapWords"
+                    android:maxLength="15"
+                    android:paddingBottom="4.0dip"
+                    android:paddingLeft="6.0dip"
+                    android:paddingRight="6.0dip"
+                    android:paddingTop="4.0dip"
+                    android:text="@string/event_details"
+                    android:textColor="#ff5e5e5e"
+                    android:textSize="14.0sp" />                -->
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/dateLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/explore_date_bg"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/organizerFollowersCountTV"
+                android:layout_width="wrap_content"
+                android:layout_height="48.0dip"
+                android:drawableLeft="@drawable/explore_date_icon"
+                android:gravity="center"
+                android:padding="2.0dip"
+                android:text="@string/event_date_start_and_hour"
+                android:textColor="#ff4c626f"
+                android:textSize="14.0sp" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffe6e5e5"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="48.0dip"
+                    android:gravity="center"
+                    android:paddingBottom="8.0dip"
+                    android:paddingLeft="12.0dip"
+                    android:paddingRight="8.0dip"
+                    android:paddingTop="8.0dip"
+                    android:text="@string/event_start_datex"
+                    android:textColor="#ff8a8a8a"
+                    android:textSize="14.0sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="48.0dip"
+                    android:gravity="center"
+                    android:paddingBottom="8.0dip"
+                    android:paddingLeft="12.0dip"
+                    android:paddingRight="8.0dip"
+                    android:paddingTop="8.0dip"
+                    android:text=":"
+                    android:textColor="#ff8a8a8a"
+                    android:textSize="14.0sp" />
+
+                <TextView
+                    android:id="@+id/etOrgaDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48.0dip"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:padding="8.0dip"
+                    android:text="20 Juin 2014"
+                    android:textColor="#ff5a5a5a"
+                    android:textSize="14.0sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0.5dip"
+                android:background="#ffe6e5e5"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="48.0dip"
+                    android:gravity="center"
+                    android:paddingBottom="8.0dip"
+                    android:paddingLeft="12.0dip"
+                    android:paddingRight="8.0dip"
+                    android:paddingTop="8.0dip"
+                    android:text="@string/event_date_hourx"
+                    android:textColor="#ff8a8a8a"
+                    android:textSize="14.0sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="48.0dip"
+                    android:gravity="center"
+                    android:paddingBottom="8.0dip"
+                    android:paddingLeft="12.0dip"
+                    android:paddingRight="8.0dip"
+                    android:paddingTop="8.0dip"
+                    android:text=":"
+                    android:textColor="#ff8a8a8a"
+                    android:textSize="14.0sp" />
+
+                <TextView
+                    android:id="@+id/etOrgaEvTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48.0dip"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:padding="8.0dip"
+                    android:text="10:00 AM"
+                    android:textColor="#ff5a5a5a"
+                    android:textSize="14.0sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/dateLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/explore_date_bg"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/organizerFollowersCountTV"
+                android:layout_width="wrap_content"
+                android:layout_height="48.0dip"
+                android:drawableLeft="@drawable/explore_date_icon"
+                android:gravity="center"
+                android:padding="2.0dip"
+                android:text="@string/event_date_end_and_hour"
+                android:textColor="#ff4c626f"
+                android:textSize="14.0sp" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffe6e5e5"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="48.0dip"
+                    android:gravity="center"
+                    android:paddingBottom="8.0dip"
+                    android:paddingLeft="12.0dip"
+                    android:paddingRight="8.0dip"
+                    android:paddingTop="8.0dip"
+                    android:text="@string/event_start_datex"
+                    android:textColor="#ff8a8a8a"
+                    android:textSize="14.0sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="48.0dip"
+                    android:gravity="center"
+                    android:paddingBottom="8.0dip"
+                    android:paddingLeft="12.0dip"
+                    android:paddingRight="8.0dip"
+                    android:paddingTop="8.0dip"
+                    android:text=":"
+                    android:textColor="#ff8a8a8a"
+                    android:textSize="14.0sp" />
+
+                <TextView
+                    android:id="@+id/etOrgaDateFIN"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48.0dip"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:padding="8.0dip"
+                    android:text="25 Juin 2014"
+                    android:textColor="#ff5a5a5a"
+                    android:textSize="14.0sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0.5dip"
+                android:background="#ffe6e5e5"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="48.0dip"
+                    android:gravity="center"
+                    android:paddingBottom="8.0dip"
+                    android:paddingLeft="12.0dip"
+                    android:paddingRight="8.0dip"
+                    android:paddingTop="8.0dip"
+                    android:text="@string/event_date_hourx"
+                    android:textColor="#ff8a8a8a"
+                    android:textSize="14.0sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="48.0dip"
+                    android:gravity="center"
+                    android:paddingBottom="8.0dip"
+                    android:paddingLeft="12.0dip"
+                    android:paddingRight="8.0dip"
+                    android:paddingTop="8.0dip"
+                    android:text=":"
+                    android:textColor="#ff8a8a8a"
+                    android:textSize="14.0sp" />
+
+                <TextView
+                    android:id="@+id/etOrgaEvTimeFIN"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48.0dip"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:padding="8.0dip"
+                    android:text="10:00 AM"
+                    android:textColor="#ff5a5a5a"
+                    android:textSize="14.0sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!--
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="48.0dip"
+            android:layout_marginLeft="16.0dip"
+            android:layout_marginRight="16.0dip"
+            android:orientation="horizontal"
+            android:padding="4.0dip" >
+
+            <TextView
+                android:id="@+id/etOrgaDate"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="6.0dip"
+                android:layout_weight="3.32"
+                android:background="@drawable/text_field_bg"
+                android:gravity="bottom"
+                android:hint="@string/event_date_hint"
+                android:inputType="datetime"
+                android:paddingBottom="4.0dip"
+                android:paddingLeft="6.0dip"
+                android:paddingRight="6.0dip"
+                android:paddingTop="4.0dip"
+                android:textColor="#ff5e5e5e"
+                android:textSize="14.0sp" />
+
+            <TextView
+                android:id="@+id/etOrgaEvTime"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="6.0dip"
+                android:background="@drawable/text_field_bg"
+                android:gravity="bottom"
+                android:hint="@string/event_Time_hint"
+                android:inputType="datetime"
+                android:paddingBottom="4.0dip"
+                android:paddingLeft="6.0dip"
+                android:paddingRight="6.0dip"
+                android:paddingTop="4.0dip"
+                android:textColor="#ff5e5e5e"
+                android:textSize="14.0sp" />
+        </LinearLayout>
+        -->
+
+        <LinearLayout
+            android:id="@+id/dateLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/explore_date_bg"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/organizerFollowersCountTV"
+                android:layout_width="wrap_content"
+                android:layout_height="48.0dip"
+                android:drawableLeft="@drawable/ic_action_sharex"
+                android:gravity="center"
+                android:padding="2.0dip"
+                android:text="@string/event_Share"
+                android:textColor="#ff4c626f"
+                android:textSize="14.0sp" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0.5dip"
+                android:background="#ffe6e5e5"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="48.0dip"
+                    android:gravity="center"
+                    android:paddingBottom="8.0dip"
+                    android:paddingLeft="12.0dip"
+                    android:paddingRight="8.0dip"
+                    android:paddingTop="8.0dip"
+                    android:text="@string/event_isVisible"
+                    android:textColor="#ff8a8a8a"
+                    android:textSize="14.0sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="48.0dip"
+                    android:layout_marginRight="30sp"
+                    android:gravity="center"
+                    android:paddingBottom="8.0dip"
+                    android:paddingLeft="12.0dip"
+                    android:paddingRight="8.0dip"
+                    android:paddingTop="8.0dip"
+                    android:text=":"
+                    android:textColor="#ff8a8a8a"
+                    android:textSize="14.0sp" />
+
+                <CheckBox
+                    android:id="@+id/EventIsVisible"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ff9f9f9f"
+                    android:textSize="13.0sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0.5dip"
+                android:background="#ffe6e5e5"
+                android:orientation="horizontal" >
+
+                <com.lpii.evma.view.FloatLabelEditText
+                    android:id="@+id/etOrgaEvDescription"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dip"
+                    android:hint="@string/app_description"
+                    android:maxLength="40"
+                    android:maxLines="1"
+                    android:textSize="14.0sp"
+                    floatlabel:fitScreenWidth="full"
+                    floatlabel:hint="@string/event_description"
+                    floatlabel:inputType="textMultiLine"
+                    floatlabel:textColorHintFocused="@color/ev_green_w"
+                    floatlabel:textColorHintUnFocused="@color/ct_dark_gray_20p" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16.0dip"
+            android:layout_marginLeft="16.0dip"
+            android:layout_marginRight="16.0dip"
+            android:layout_marginTop="16.0dip"
+            android:orientation="vertical"
+            android:padding="0.0dip" >
+
+            <FrameLayout
+                android:id="@+id/ForfaitFrm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+            </FrameLayout>
+
+            <Button
+                android:id="@+id/EventCreateFinish"
+                android:layout_width="fill_parent"
+                android:layout_height="48.0dip"
+                android:background="@drawable/btn_login_states"
+                android:paddingLeft="57.0dip"
+                android:textAllCaps="true"
+                android:textColor="#ffffffff"
+                android:visibility="visible" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin" >
+
+    
+    <Button
+        android:id="@+id/btnOrganiHome"
+        android:layout_width="fill_parent"
+        android:layout_height="48.0dip"
+         android:layout_marginBottom="16.0dip"
+        android:layout_marginLeft="16.0dip"
+        android:layout_marginRight="16.0dip"
+        android:background="@drawable/btn_follow_states"
+        android:paddingRight="57.0dip"
+        android:text="Organizer"
+        android:textColor="#ffffffff" />
+
+    <Button
+        android:id="@+id/btnUserHome"
+        android:layout_width="fill_parent"
+        android:layout_height="48.0dip"
+        android:layout_alignLeft="@+id/btnOrganiHome"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/btnOrganiHome"
+        android:layout_marginTop="90dp"
+        android:background="@drawable/btn_follow_states"
+        android:text="User"
+        android:textColor="#ffffffff" />
+    
+    <Button
+        android:id="@+id/btnUserHx"
+        android:layout_width="fill_parent"
+        android:layout_height="48.0dip"
+        android:layout_alignLeft="@+id/btnOrganiHome"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/btnOrganiHome"
+        android:layout_marginTop="190dp"
+        android:background="@drawable/btn_follow_states"
+        android:text="Sign Up"
+        android:textColor="#ffffffff" />
+    
+    <Button
+        android:id="@+id/btnUserLogin"
+        android:layout_width="fill_parent"
+        android:layout_height="48.0dip"
+        android:layout_alignLeft="@+id/btnOrganiHome"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/btnOrganiHome"
+        android:layout_marginTop="290dp"
+        android:background="@drawable/btn_follow_states"
+        android:text="Login"
+        android:textColor="#ffffffff" />
+
+</RelativeLayout>

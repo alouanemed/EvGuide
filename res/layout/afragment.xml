@@ -1,0 +1,24 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true" >
+ 
+		<ListView
+		android:id="@+id/list_view"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:headerDividersEnabled="true"
+		android:footerDividersEnabled="true"
+		android:listSelector="@android:color/transparent"
+		android:cacheColorHint="@android:color/transparent"
+		android:divider="@null"
+		android:dividerHeight="10dp"
+		style="@style/EvCardStyle"
+		 />
+        
+
+         
+    
+
+</LinearLayout>

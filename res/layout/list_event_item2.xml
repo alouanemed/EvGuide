@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/Background_main"
+    android:paddingLeft="@dimen/padding_main"
+    android:paddingRight="@dimen/padding_main"
+    android:paddingTop="@dimen/padding_main" >
+
+    <RelativeLayout
+        android:id="@+id/lytMain"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_card_background"
+        android:padding="@dimen/padding_main_content" >
+
+        <FrameLayout
+            android:id="@+id/lytImage"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/imgThumbnail"
+                android:layout_width="fill_parent"
+                android:layout_height="158dp"
+                android:contentDescription="@string/app_name"
+                android:scaleType="centerCrop"
+                android:src="@drawable/profile_bg" />
+
+            <RelativeLayout
+                android:id="@+id/lytTitlex"
+                android:layout_width="60dp"
+                android:layout_height="80dp"
+                android:layout_gravity="right" >
+
+                <TextView
+                    android:id="@+id/EvDateMonth"
+                    android:layout_width="270dp"
+                    android:layout_height="65dp"
+                    android:text="Juin"
+                    android:textColor="@color/text_deal"
+                    android:textSize="28sp" />
+
+                <TextView
+                    android:id="@+id/EvDateDay"
+                    android:layout_width="270dp"
+                    android:layout_height="65dp"
+                    android:layout_marginTop="@dimen/font_size_large"
+                    android:text="17"
+                    android:textColor="@color/text_deal"
+                    android:textSize="38sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/lytTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|left|center"
+                android:layout_marginTop="@dimen/margin_top_home_deal"
+                android:background="@color/ev_green_w" >
+
+                <!--
+                <TextView
+                    android:id="@+id/lblStartValue"
+                    style="@android:style/TextAppearance.Small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_top_home_start_deal"
+                    android:paddingRight="@dimen/margin_left_home_deal"
+                    android:text="@string/Participer"
+                    android:textColor="@color/text_deal"
+                    android:visibility="gone" />
+                -->
+
+                <TextView
+                    android:id="@+id/Ev_Start_Price"
+                    style="@android:style/TextAppearance.DeviceDefault"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="Tickets Starting At "
+                    android:textColor="@color/text_deal"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/Ev_Start_Pricex"
+                    style="@android:style/TextAppearance.Widget.TextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/Ev_Start_Price"
+                    android:text=" 99 MAD"
+                    android:textColor="@color/text_deal"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+        </FrameLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lytImage"
+            android:layout_marginTop="@dimen/margin_top_title"
+            android:background="@color/Background_main_content" >
+
+            <TextView
+                android:id="@+id/EvTitle"
+                style="@android:style/TextAppearance.DeviceDefault.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="Google i/O Extended Agadir 2014"
+                android:textColor="@color/text_title"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/imgDivider"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/line_height"
+        android:layout_below="@+id/lytMain"
+        android:background="@color/divider"
+        android:contentDescription="@string/app_name" />
+    <!-- useefull hidden data for ev -->
+
+    <TextView
+        android:id="@+id/Ev_Idx"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:text="fsss"
+        android:textColor="#5d5d5d"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/event_description_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:text="fsss"
+        android:textColor="#5d5d5d"
+        android:textStyle="bold"
+        android:visibility="gone" />
+    
+     
+    <TextView
+        android:id="@+id/event_xdescription_dateFIN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:fontFamily="sans-serif-light"
+        android:text="@string/Username"
+        android:textSize="16sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/card_event_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:text="fsss"
+        android:textColor="#5d5d5d"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/Ev_idy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/event_visible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <!--
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgDivider"
+        android:layout_centerVertical="true"
+        android:background="@color/Background_main_content"
+        android:padding="@dimen/padding_main_content" >
+
+        <TextView
+            android:id="@+id/lblEndDateTxt"
+            style="@android:style/TextAppearance.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="@string/lbl_date_end"
+            android:textColor="@color/text_sub_title"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/lblEndDate"
+            style="@android:style/TextAppearance.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/lblEndDateTxt"
+            android:textColor="@color/text_sub_title" />
+    </RelativeLayout>        -->
+
+    </TextView>
+
+</RelativeLayout>

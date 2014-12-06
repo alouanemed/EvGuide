@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".view.organizer.OrganizerEvOverViewFragment" >
+
+    <RelativeLayout
+        android:id="@+id/lytDetail"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <ScrollView
+            android:id="@+id/lytContent"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@+id/adView" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/Background_main"
+                android:padding="@dimen/padding_main" >
+
+                <LinearLayout
+                    android:id="@+id/lytMain"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/Background_main_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/padding_main_content" >
+
+                    <LinearLayout
+                        android:id="@+id/lytContentDate"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/btnGet"
+                        android:background="@color/Background_main_content"
+                        android:orientation="vertical"
+                        android:padding="@dimen/padding_main_content" >
+
+                        <TextView
+                            android:id="@+id/tvOrganizerEvDate"
+                            style="@android:style/TextAppearance.Small"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_top_title"
+                            android:text="Text"
+                            android:textColor="@color/text_sub_title" />
+
+                        <TextView
+                            android:id="@+id/tvOrganizerEvTitle"
+                            style="@android:style/TextAppearance.Large"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Text"
+                            android:textColor="@color/text_title"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/lblEvAddress"
+                            style="@android:style/TextAppearance.Small"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="B.P 8106, Agadir, Morocco"
+                            android:textColor="@color/text_sub_title" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/lytMedia"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/thumb_height"
+                        android:orientation="horizontal" >
+
+                        <LinearLayout
+                            android:id="@+id/lytMedia"
+                            android:layout_width="64dp"
+                            android:layout_height="@dimen/thumb_height"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                android:id="@+id/tvOrgaEvTicketSolde"
+                                style="@android:style/TextAppearance.Small"
+                                android:layout_width="53dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/margin_top_title"
+                                android:text="21%"
+                                android:textColor="#99CC00" />
+
+                            <TextView
+                                android:id="@+id/tvOrgaEvTicketPending"
+                                style="@android:style/TextAppearance.Small"
+                                android:layout_width="53dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/margin_top_title"
+                                android:text="25%"
+                                android:textColor="#FFBB33" />
+
+                            <TextView
+                                android:id="@+id/tvOrgaEvTicketAvail"
+                                style="@android:style/TextAppearance.Small"
+                                android:layout_width="53dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/margin_top_title"
+                                android:text="60%"
+                                android:textColor="#AA66CC" />
+                        </LinearLayout>
+
+                        <com.echo.holographlibrary.PieGraph
+                            android:id="@+id/piegraph"
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/lytMainPrice"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/lytMain"
+                    android:layout_marginTop="@dimen/padding_main_content"
+                    android:background="@color/Background_main_content" >
+
+                    <LinearLayout
+                        android:id="@+id/lytContentPrice"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/Background_main_content"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/TvEvEarnings"
+                            style="@android:style/TextAppearance.Large"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:paddingBottom="@dimen/padding_detail_price"
+                            android:paddingTop="@dimen/padding_detail_price"
+                            android:text="4699.98 MAD"
+                            android:textColor="@color/text_deal_detail"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:id="@+id/imgDivider"
+                            android:layout_width="fill_parent"
+                            android:layout_height="@dimen/line_height"
+                            android:background="@color/divider"
+                            android:contentDescription="@string/app_name" />
+
+                        <LinearLayout
+                            android:id="@+id/lytPriceDetail"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/Background_main_content"
+                            android:orientation="horizontal" >
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1.0"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:padding="@dimen/padding_detail_price" >
+
+                                <TextView
+                                    android:id="@+id/lblStart"
+                                    style="@android:style/TextAppearance.Small"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/lbl_Tickets_Solde"
+                                    android:textColor="@color/text_sub_title"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/lblVendusValue"
+                                    style="@android:style/TextAppearance.Large"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="45"
+                                    android:textColor="#99CC00"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                            <ImageView
+                                android:id="@+id/imgDivider1"
+                                android:layout_width="@dimen/line_height"
+                                android:layout_height="fill_parent"
+                                android:background="@color/divider"
+                                android:contentDescription="@string/app_name" />
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1.0"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:padding="@dimen/padding_detail_price" >
+
+                                <TextView
+                                    style="@android:style/TextAppearance.Small"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/lbl_Tickets_Pending"
+                                    android:textColor="@color/text_sub_title"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/TvTicketsPendingValue"
+                                    style="@android:style/TextAppearance.Large"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="9"
+                                    android:textColor="@color/text_disc"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                            <ImageView
+                                android:layout_width="@dimen/line_height"
+                                android:layout_height="fill_parent"
+                                android:background="@color/divider"
+                                android:contentDescription="@string/app_name" />
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1.0"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:padding="@dimen/padding_detail_price" >
+
+                                <TextView
+                                    android:id="@+id/tvTickets_available"
+                                    style="@android:style/TextAppearance.Small"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/lbl_Tickets_available"
+                                    android:textColor="@color/text_sub_title"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/tvTickets_availableVal"
+                                    style="@android:style/TextAppearance.Large"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="75"
+                                    android:textColor="#AA66CC"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/lytDate"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/lytMainPrice"
+                    android:layout_marginTop="@dimen/padding_main_content"
+                    android:background="@color/Background_main_content" >
+
+                    <LinearLayout
+                        android:id="@+id/lytParitcipantsx"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/btnGet"
+                        android:background="@color/Background_main_content"
+                        android:orientation="vertical"
+                        android:padding="@dimen/padding_main_content" >
+
+                        <LinearLayout
+                            android:id="@+id/lytEndDate"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/Background_main_content"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:id="@+id/lblEndDate"
+                                style="@android:style/TextAppearance.Small"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Derniers Participants de l'Ev."
+                                android:textColor="@color/text_sub_title"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/lblEndDateValue"
+                                style="@android:style/TextAppearance.Small"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/text_sub_title" />
+                        </LinearLayout>
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical" >
+
+                            <LinearLayout
+                                android:id="@+id/fragment_container_pariticpant"
+                                android:layout_width="match_parent"
+                                android:layout_height="300dip"
+                                android:orientation="vertical" >
+                            </LinearLayout>
+                        </FrameLayout>
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/btnGet"
+                        style="@android:style/TextAppearance.Small"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_margin="@dimen/padding_main_content"
+                        android:background="@drawable/btn_connect_states"
+                        android:paddingLeft="30.0dip"
+                        android:paddingRight="30.0dip"
+                        android:text="@string/btn_get_it"
+                        android:textColor="@color/text_btn"
+                        android:visibility="gone" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/lytRetry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="Overview"
+            android:textSize="20dp" />
+    </LinearLayout>
+
+</RelativeLayout>

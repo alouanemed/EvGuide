@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ff3d3d3d"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/avatarLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="65.0dip"
+        android:background="@drawable/menu_profile_states"
+        android:orientation="horizontal"
+        android:padding="12.0dip" >
+
+        <ImageView
+            android:id="@+id/userAvatar"
+            android:layout_width="66.0dip"
+            android:layout_height="fill_parent"
+            android:src="@drawable/avatar" />
+
+        <LinearLayout
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/userName"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="marquee"
+                android:paddingBottom="4.0dip"
+                android:paddingLeft="12.0dip"
+                android:paddingRight="4.0dip"
+                android:paddingTop="4.0dip"
+                android:text="Fahd Idaghdour"
+                android:textColor="#ffcccccc"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/exploreBtn"
+        android:layout_width="fill_parent"
+        android:layout_height="65.0dip"
+        android:background="@drawable/menu_button_states"
+        android:drawableLeft="@drawable/menu_icon_explorer"
+        android:drawablePadding="14.0dip"
+        android:gravity="left|center"
+        android:padding="8.0dip"
+        android:text="@string/menu_explore"
+        android:textColor="#ffcccccc"
+        />
+
+    <Button
+        android:id="@+id/manageSelectionsBtn"
+        android:layout_width="fill_parent"
+        android:layout_height="65.0dip"
+        android:background="@drawable/menu_button_states"
+        android:drawableLeft="@drawable/menu_icon_manage_selection"
+        android:drawablePadding="14.0dip"
+        android:gravity="left|center"
+        android:padding="8.0dip"
+        android:text="@string/menu_manage_selection"
+        android:textColor="#ffcccccc"
+        android:textSize="18.0sp"
+        />
+
+    <Button
+        android:id="@+id/findFriendsBtn"
+        android:layout_width="fill_parent"
+        android:layout_height="65.0dip"
+        android:background="@drawable/menu_button_states"
+        android:drawableLeft="@drawable/menu_icon_find_friends"
+        android:drawablePadding="14.0dip"
+        android:gravity="left|center"
+        android:padding="8.0dip"
+        android:text="@string/menu_find_friends"
+        android:textColor="#ffcccccc"
+        android:textSize="18.0sp"
+        />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="1.0"
+        android:background="@drawable/drive_menu_bg" />
+
+    <Button
+        android:id="@+id/settingsBtn"
+        android:layout_width="fill_parent"
+        android:layout_height="65.0dip"
+        android:background="@drawable/menu_button_states"
+        android:drawableLeft="@drawable/menu_icon_settings"
+        android:drawablePadding="14.0dip"
+        android:gravity="left|center"
+        android:padding="8.0dip"
+        android:text="@string/menu_settings"
+        android:textColor="#ffcccccc"
+        />
+
+    <Button
+        android:id="@+id/feedbackBtn"
+        android:layout_width="fill_parent"
+        android:layout_height="65.0dip"
+        android:background="@drawable/menu_button_states"
+        android:drawableLeft="@drawable/menu_icon_feedback"
+        android:drawablePadding="14.0dip"
+        android:gravity="left|center"
+        android:padding="8.0dip"
+        android:text="@string/menu_feedback"
+        android:textColor="#ffcccccc"
+        />
+
+    <Button
+        android:id="@+id/helpBtn"
+        android:layout_width="fill_parent"
+        android:layout_height="65.0dip"
+        android:background="@drawable/menu_button_states"
+        android:drawableLeft="@drawable/menu_icon_help"
+        android:drawablePadding="14.0dip"
+        android:gravity="left|center"
+        android:padding="8.0dip"
+        android:text="@string/menu_help"
+        android:textColor="#ffcccccc"
+        />
+
+</LinearLayout>

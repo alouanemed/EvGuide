@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="50.0dip"
+    android:background="@drawable/event_speakers_listview_states"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingBottom="8.0dip"
+    android:paddingLeft="8.0dip"
+    android:paddingRight="8.0dip"
+    android:paddingTop="8.0dip" >
+
+    <ImageView
+        android:id="@+id/attendeeIV"
+        android:layout_width="34.0dip"
+        android:layout_height="34.0dip"
+        android:layout_marginLeft="6.0dip"
+        android:src="@drawable/avatar" />
+
+    <TextView
+        android:id="@+id/TVattendeeName"
+        android:layout_width="0.0dip"
+        android:layout_height="fill_parent"
+        android:layout_weight="1.0"
+        android:drawablePadding="12.0dip"
+        android:gravity="center_vertical"
+        android:paddingLeft="12.0dip"
+        android:text="Alouane Mohamed"
+        android:textColor="#ff4c626f"
+        android:textSize="14.0sp"
+       />
+
+    <TextView
+        android:id="@+id/evAttendeeID"
+        android:layout_width="0.0dip"
+        android:layout_height="fill_parent"
+        android:layout_weight="1.0"
+        android:drawablePadding="12.0dip"
+        android:gravity="center_vertical"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/btnContactUser"
+        android:layout_width="wrap_content"
+        android:layout_height="19dp"
+        android:layout_marginTop="0.0dip"
+        android:background="@drawable/btn_follow_states"
+        android:paddingLeft="16.0dip"
+        android:paddingRight="24.0dip"
+        android:text="14"
+        android:textAllCaps="true"
+        android:textColor="#ffffffff"
+        android:textSize="10.0sp" />
+    
+    <Button
+        android:id="@+id/btnContactUser"
+        android:layout_width="wrap_content"
+        android:layout_height="19dp"
+        android:layout_marginTop="0.0dip"
+        android:background="@drawable/btn_follow_states"
+        android:paddingLeft="16.0dip"
+        android:paddingRight="24.0dip"
+        android:text="400 MAD"
+        android:textAllCaps="true"
+        android:textColor="#ffffffff"
+        android:textSize="10.0sp" />
+
+</LinearLayout>

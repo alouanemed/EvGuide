@@ -1,0 +1,643 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#fff1f1f1"
+    android:orientation="vertical"
+    android:scrollbars="none" >
+
+    <!-- <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#fff1f1f1"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#fff1f1f1"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="48.0dip"
+                android:baselineAligned="false"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/exploreEventsTabLayout"
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/event_tabs_bg_active"
+                    android:clickable="true"
+                    android:drawableRight="@drawable/event_tabs_separator"
+                    android:gravity="center"
+                    android:onClick="showEventsLayout"
+                    android:orientation="vertical"
+                    android:text="@string/explore_events"
+                    android:textColor="#ff323435"
+                    android:textSize="13.0sp"
+                     />
+
+                <TextView
+                    android:id="@+id/exploreUsersTabLayout"
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/event_tabs_bg"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:onClick="showUsersLayout"
+                    android:orientation="vertical"
+                    android:text="@string/explore_users"
+                    android:textColor="#ff4c626f"
+                    android:textSize="13.0sp"
+                     />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/explore_search_edittext_bg"
+                android:baselineAligned="false"
+                android:orientation="vertical"
+                android:paddingBottom="8.0dip"
+                android:paddingLeft="8.0dip"
+                android:paddingRight="8.0dip"
+                android:paddingTop="0.0dip" >
+
+                <LinearLayout
+                    android:id="@+id/focusHolder"
+                    android:layout_width="fill_parent"
+                    android:layout_height="8.0dip"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:orientation="vertical" />
+
+                <LinearLayout
+                    android:id="@+id/searchEventLayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/explore_search_place_holder" />
+
+                    <com.synergie.media.ev.view.TypeFacedEditText
+                        android:id="@+id/searchEventET"
+                        android:layout_width="0.0dip"
+                        android:layout_height="48.0dip"
+                        android:layout_weight="1.0"
+                        android:background="@drawable/explore_search_field_states"
+                        android:hint="@string/explore_event_name"
+                        android:lines="1"
+                        android:maxLines="1"
+                        android:paddingLeft="8.0dip"
+                        android:singleLine="true"
+                        android:textSize="14.0sp"
+                         />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/searchUserLayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:visibility="gone" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/explore_search_place_holder" />
+
+                    <com.synergie.media.ev.view.TypeFacedEditText
+                        android:id="@+id/searchUserET"
+                        android:layout_width="0.0dip"
+                        android:layout_height="48.0dip"
+                        android:layout_weight="1.0"
+                        android:background="@drawable/explore_search_field_states"
+                        android:hint="@string/explore_user_name"
+                        android:lines="1"
+                        android:maxLines="1"
+                        android:paddingLeft="8.0dip"
+                        android:singleLine="true"
+                        android:textSize="14.0sp"
+                         />
+                </LinearLayout>
+            </LinearLayout>
+
+            <ViewSwitcher
+                android:id="@+id/mainVS"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <ViewSwitcher
+                    android:id="@+id/eventsVS"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <LinearLayout
+                        android:id="@+id/eventsSearchLayout"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16.0dip"
+                        android:layout_marginRight="16.0dip"
+                        android:layout_marginTop="24.0dip"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/noCriteriaSelectedTV"
+                            android:layout_width="fill_parent"
+                            android:layout_height="48.0dip"
+                            android:layout_marginBottom="8.0dip"
+                            android:gravity="center"
+                            android:text="@string/explore_no_criteria"
+                            android:textColor="#fffb7174"
+                            android:textSize="14.0sp"
+                            android:visibility="gone" />
+
+                        <LinearLayout
+                            android:id="@+id/dateLayout"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/explore_date_bg"
+                            android:gravity="center"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                android:id="@+id/organizerFollowersCountTV"
+                                android:layout_width="wrap_content"
+                                android:layout_height="48.0dip"
+                                android:drawableLeft="@drawable/explore_date_icon"
+                                android:gravity="center"
+                                android:padding="2.0dip"
+                                android:text="@string/explore_date_title"
+                                android:textColor="#ff4c626f"
+                                android:textSize="14.0sp"
+                                 />
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:background="#ffe6e5e5"
+                                android:orientation="horizontal" >
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="48.0dip"
+                                    android:gravity="center"
+                                    android:paddingBottom="8.0dip"
+                                    android:paddingLeft="12.0dip"
+                                    android:paddingRight="8.0dip"
+                                    android:paddingTop="8.0dip"
+                                    android:text="@string/explore_date_from"
+                                    android:textColor="#ff8a8a8a"
+                                    android:textSize="14.0sp"
+                                     />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="48.0dip"
+                                    android:gravity="center"
+                                    android:paddingBottom="8.0dip"
+                                    android:paddingLeft="12.0dip"
+                                    android:paddingRight="8.0dip"
+                                    android:paddingTop="8.0dip"
+                                    android:text=":"
+                                    android:textColor="#ff8a8a8a"
+                                    android:textSize="14.0sp"
+                                     />
+
+                                <TextView
+                                    android:id="@+id/dateFromTV"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="48.0dip"
+                                    android:clickable="true"
+                                    android:gravity="center"
+                                    android:onClick="showDatePickerDialog"
+                                    android:padding="8.0dip"
+                                    android:text="20 Août 2013"
+                                    android:textColor="#ff5a5a5a"
+                                    android:textSize="14.0sp"
+                                     />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="0.5dip"
+                                android:background="#ffe6e5e5"
+                                android:orientation="horizontal" >
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="48.0dip"
+                                    android:gravity="center"
+                                    android:paddingBottom="8.0dip"
+                                    android:paddingLeft="12.0dip"
+                                    android:paddingRight="8.0dip"
+                                    android:paddingTop="8.0dip"
+                                    android:text="@string/explore_date_to"
+                                    android:textColor="#ff8a8a8a"
+                                    android:textSize="14.0sp"
+                                     />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="48.0dip"
+                                    android:gravity="center"
+                                    android:paddingBottom="8.0dip"
+                                    android:paddingLeft="12.0dip"
+                                    android:paddingRight="8.0dip"
+                                    android:paddingTop="8.0dip"
+                                    android:text=":"
+                                    android:textColor="#ff8a8a8a"
+                                    android:textSize="14.0sp"
+                                     />
+
+                                <TextView
+                                    android:id="@+id/dateToTV"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="48.0dip"
+                                    android:clickable="true"
+                                    android:gravity="center"
+                                    android:onClick="showDatePickerDialog"
+                                    android:padding="8.0dip"
+                                    android:text="20 Août 2013"
+                                    android:textColor="#ff5a5a5a"
+                                    android:textSize="14.0sp"
+                                     />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <FrameLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20.0dip" >
+
+                            <TextView
+                                android:id="@+id/citiesSelectorTV"
+                                android:layout_width="fill_parent"
+                                android:layout_height="48.0dip"
+                                android:background="@drawable/explore_selector_states"
+                                android:clickable="true"
+                                android:gravity="left|center"
+                                android:onClick="showCitiesListDialog"
+                                android:paddingBottom="8.0dip"
+                                android:paddingLeft="12.0dip"
+                                android:paddingRight="8.0dip"
+                                android:paddingTop="8.0dip"
+                                android:text="@string/explore_select_cities"
+                                android:textColor="#ff8a8a8a"
+                                android:textSize="14.0sp"
+                                 />
+
+                            <ProgressBar
+                                android:id="@+id/loadingCitiesProgressBar"
+                                android:layout_width="48.0dip"
+                                android:layout_height="48.0dip"
+                                android:layout_gravity="right|center"
+                                android:visibility="gone" />
+                        </FrameLayout>
+
+                        <TextView
+                            android:id="@+id/categoriesSelectorTV"
+                            android:layout_width="fill_parent"
+                            android:layout_height="48.0dip"
+                            android:layout_marginTop="20.0dip"
+                            android:background="@drawable/explore_selector_states"
+                            android:clickable="true"
+                            android:gravity="left|center"
+                            android:onClick="showCategoriesListDialog"
+                            android:paddingBottom="8.0dip"
+                            android:paddingLeft="12.0dip"
+                            android:paddingRight="8.0dip"
+                            android:paddingTop="8.0dip"
+                            android:text="@string/explore_select_categories"
+                            android:textColor="#ff8a8a8a"
+                            android:textSize="14.0sp"
+                             />
+
+                        <Button
+                            android:id="@+id/exploreEventsBtn"
+                            android:layout_width="fill_parent"
+                            android:layout_height="48.0dip"
+                            android:layout_marginBottom="16.0dip"
+                            android:layout_marginLeft="16.0dip"
+                            android:layout_marginRight="16.0dip"
+                            android:layout_marginTop="16.0dip"
+                            android:background="@drawable/explore_button_states"
+                            android:onClick="exploreEvents"
+                            android:text="@string/explore_explore"
+                            android:textAllCaps="true"
+                            android:textColor="#ffffffff"
+                             />
+                    </LinearLayout>
+
+                    <FrameLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent" >
+
+                        <LinearLayout
+                            android:id="@+id/noEventsFoundLayout"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="top|center"
+                            android:orientation="vertical"
+                            android:padding="20.0dip"
+                            android:visibility="gone" >
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="16.0dip"
+                                android:contentDescription="@string/empty"
+                                android:src="@drawable/no_users" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="32.0dip"
+                                android:clickable="true"
+                                android:gravity="left|center"
+                                android:padding="8.0dip"
+                                android:text="@string/explore_no_events"
+                                android:textColor="#ff5a5a5a"
+                                android:textSize="14.0sp"
+                                 />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/networkErrorForEventsTV"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:clickable="true"
+                            android:gravity="left|center"
+                            android:padding="8.0dip"
+                            android:text="@string/explore_no_network"
+                            android:textColor="#ff5a5a5a"
+                            android:textSize="14.0sp"
+                            android:visibility="gone" />
+
+                        <ListView
+                            android:id="@+id/eventsSearchResultLV"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:divider="@null"
+                            android:dividerHeight="0.0dip"
+                            android:focusable="true"
+                            android:scrollbars="vertical" />
+
+                        <ProgressBar
+                            android:id="@+id/eventsSearchProgressBar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center" />
+                    </FrameLayout>
+                </ViewSwitcher>
+
+                <ViewSwitcher
+                    android:id="@+id/usersVS"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <LinearLayout
+                        android:id="@+id/usersSearchLayout"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16.0dip"
+                        android:layout_marginRight="16.0dip"
+                        android:layout_marginTop="24.0dip"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/noCategoriesSelectedTV"
+                            android:layout_width="fill_parent"
+                            android:layout_height="48.0dip"
+                            android:layout_marginBottom="8.0dip"
+                            android:gravity="center"
+                            android:text="@string/explore_no_criteria"
+                            android:textColor="#fffb7174"
+                            android:textSize="14.0sp"
+                            android:visibility="gone" />
+
+                        <com.synergie.media.ev.view.TypeFacedCheckedTextView
+                            android:id="@+id/usersCTV"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/explore_field_states"
+                            android:checkMark="@drawable/tick_mark"
+                            android:checked="false"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:gravity="left|center"
+                            android:onClick="toggleCTV"
+                            android:paddingLeft="16.0dip"
+                            android:paddingRight="8.0dip"
+                            android:text="@string/explore_user"
+                            android:textColor="#ff8a8a8a"
+                             />
+
+                        <com.synergie.media.ev.view.TypeFacedCheckedTextView
+                            android:id="@+id/friendsCTV"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10.0dip"
+                            android:background="@drawable/explore_field_states"
+                            android:checkMark="@drawable/tick_mark"
+                            android:checked="false"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:gravity="left|center"
+                            android:onClick="toggleCTV"
+                            android:paddingLeft="16.0dip"
+                            android:paddingRight="8.0dip"
+                            android:text="@string/explore_friends"
+                            android:textColor="#ff8a8a8a"
+                             />
+
+                        <com.synergie.media.ev.view.TypeFacedCheckedTextView
+                            android:id="@+id/organizersCTV"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10.0dip"
+                            android:background="@drawable/explore_field_states"
+                            android:checkMark="@drawable/tick_mark"
+                            android:checked="false"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:gravity="left|center"
+                            android:onClick="toggleCTV"
+                            android:paddingLeft="16.0dip"
+                            android:paddingRight="8.0dip"
+                            android:text="@string/explore_organizer"
+                            android:textColor="#ff8a8a8a"
+                             />
+
+                        <com.synergie.media.ev.view.TypeFacedCheckedTextView
+                            android:id="@+id/speakersCTV"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10.0dip"
+                            android:background="@drawable/explore_field_states"
+                            android:checkMark="@drawable/tick_mark"
+                            android:checked="false"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:gravity="left|center"
+                            android:onClick="toggleCTV"
+                            android:paddingLeft="16.0dip"
+                            android:paddingRight="8.0dip"
+                            android:text="@string/explore_speaker"
+                            android:textColor="#ff8a8a8a"
+                             />
+
+                        <Button
+                            android:id="@+id/exploreUsersBtn"
+                            android:layout_width="fill_parent"
+                            android:layout_height="48.0dip"
+                            android:layout_marginBottom="16.0dip"
+                            android:layout_marginLeft="16.0dip"
+                            android:layout_marginRight="16.0dip"
+                            android:layout_marginTop="16.0dip"
+                            android:background="@drawable/explore_button_states"
+                            android:onClick="exploreUsers"
+                            android:text="@string/explore_explore"
+                            android:textAllCaps="true"
+                            android:textColor="#ffffffff"
+                             />
+                    </LinearLayout>
+
+                    <FrameLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent" >
+
+                        <LinearLayout
+                            android:id="@+id/noUsersFoundLayout"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="top|center"
+                            android:orientation="vertical"
+                            android:padding="20.0dip"
+                            android:visibility="gone" >
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="16.0dip"
+                                android:contentDescription="@string/empty"
+                                android:src="@drawable/no_users" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="32.0dip"
+                                android:clickable="true"
+                                android:gravity="left|center"
+                                android:padding="8.0dip"
+                                android:text="@string/explore_no_users"
+                                android:textColor="#ff5a5a5a"
+                                android:textSize="14.0sp"
+                                 />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/networkErrorForUsersTV"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:clickable="true"
+                            android:gravity="left|center"
+                            android:padding="8.0dip"
+                            android:text="@string/explore_no_network"
+                            android:textColor="#ff5a5a5a"
+                            android:textSize="14.0sp"
+                            android:visibility="gone"
+                              />
+
+                        <ListView
+                            android:id="@+id/usersSearchResultLV"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:divider="@null"
+                            android:dividerHeight="0.0dip" />
+
+                        <ProgressBar
+                            android:id="@+id/usersSearchProgressBar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center" />
+                    </FrameLayout>
+                </ViewSwitcher>
+            </ViewSwitcher>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="48.0dip"
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:id="@+id/previousEventsFixedLayout"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:background="@color/explore_tab_active"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="showPreviousEvents"
+            android:orientation="vertical"
+            android:padding="8.0dip" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2.0dip"
+                android:text="@string/explore_events"
+                android:textColor="#ff4c626f"
+                android:textSize="13.0sp"
+                 />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/commingEventsFixedLayout"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:background="@color/explore_tab"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="showCommingEvents"
+            android:orientation="vertical"
+            android:padding="8.0dip" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2.0dip"
+                android:text="@string/explore_users"
+                android:textColor="#ff4c626f"
+                android:textSize="13.0sp"  />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/errorLayerTV"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/explore_button_states"
+        android:padding="16.0dip"
+        android:text="@string/explore_date_error"
+        android:textColor="#ffffffff"
+        android:textSize="12.0sp"
+        android:visibility="gone" /> -->
+
+</FrameLayout>

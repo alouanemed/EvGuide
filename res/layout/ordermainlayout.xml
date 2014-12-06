@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/Form"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffe8e8e8"
+    android:orientation="vertical"
+    android:padding="@dimen/spacing_micro"
+    tools:context=".view.OrderOverview" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40.0dip"
+        android:background="#ffe8e8e8"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40.0dip"
+            android:background="@drawable/event_info_bg"
+            android:gravity="center_vertical"
+            android:padding="12.0dip"
+            android:text="@string/event_pack_cm_dQty"
+            android:textColor="#ff4c626f"
+            android:textSize="14.0sp" />
+
+        <TextView
+            android:id="@+id/TvOrderQty"
+            android:layout_width="0.0dip"
+            android:layout_height="40.0dip"
+            android:layout_weight="1.0"
+            android:background="@drawable/event_info_bg"
+            android:gravity="right"
+            android:paddingBottom="12.0dip"
+            android:paddingLeft="0.0dip"
+            android:paddingRight="12.0dip"
+            android:paddingTop="12.0dip"
+            android:text="7"
+            android:textColor="#ff36383a"
+            android:textSize="14.0sp" />
+
+        <TextView
+            android:id="@+id/TvOrderQty"
+            android:layout_width="0.0dip"
+            android:layout_height="40.0dip"
+            android:layout_weight="1.0"
+            android:background="@drawable/event_info_bg"
+            android:gravity="center_horizontal"
+            android:paddingBottom="12.0dip"
+            android:paddingLeft="0.0dip"
+            android:paddingRight="12.0dip"
+            android:paddingTop="12.0dip"
+            android:text="X"
+            android:textColor="#ff36383a"
+            android:textSize="14.0sp" />
+
+        <TextView
+            android:id="@+id/TvOrderUnitPrice"
+            android:layout_width="0.0dip"
+            android:layout_height="40.0dip"
+            android:layout_weight="1.0"
+            android:background="@drawable/event_info_bg"
+            android:gravity="right"
+            android:paddingBottom="12.0dip"
+            android:paddingLeft="0.0dip"
+            android:paddingRight="12.0dip"
+            android:paddingTop="12.0dip"
+            android:text="259 MAD"
+            android:textColor="#ff36383a"
+            android:textSize="14.0sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40.0dip"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40.0dip"
+            android:background="@drawable/event_info_bg"
+            android:gravity="center_vertical"
+            android:padding="12.0dip"
+            android:text="@string/event_order_fees"
+            android:textColor="#ff4c626f"
+            android:textSize="14.0sp" />
+
+        <TextView
+            android:id="@+id/tvOrderFees"
+            android:layout_width="0.0dip"
+            android:layout_height="40.0dip"
+            android:layout_weight="1.0"
+            android:background="@drawable/event_info_bg"
+            android:gravity="right"
+            android:paddingBottom="12.0dip"
+            android:paddingLeft="0.0dip"
+            android:paddingRight="12.0dip"
+            android:paddingTop="12.0dip"
+            android:text="29.99 MAD"
+            android:textColor="#ff36383a"
+            android:textSize="14.0sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40.0dip"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40.0dip"
+            android:background="@drawable/event_info_bg"
+            android:gravity="center_vertical"
+            android:padding="12.0dip"
+            android:text="@string/event_order_ttl"
+            android:textColor="#ff4c626f"
+            android:textSize="14.0sp" />
+
+        <TextView
+            android:id="@+id/tvOrderttl"
+            android:layout_width="0.0dip"
+            android:layout_height="40.0dip"
+            android:layout_weight="1.0"
+            android:background="@drawable/event_info_bg"
+            android:gravity="right"
+            android:paddingBottom="12.0dip"
+            android:paddingLeft="0.0dip"
+            android:paddingRight="12.0dip"
+            android:paddingTop="12.0dip"
+            android:text="259 MAD"
+            android:textColor="#ff36383a"
+            android:textSize="14.0sp" />
+    </LinearLayout>
+    
+      <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40.0dip"
+        android:orientation="horizontal" >
+
+          
+        <EditText 
+            android:id="@+id/tvCoupon"
+            android:layout_width="0.0dip"
+            android:layout_height="40.0dip"
+            android:layout_weight="1.0"
+            android:background="@drawable/event_info_bg"
+            android:gravity="right"
+            android:paddingBottom="12.0dip"
+            android:paddingLeft="0.0dip"
+            android:paddingRight="12.0dip"
+            android:paddingTop="12.0dip"
+            android:textColor="#ff36383a"
+            android:textSize="14.0sp"
+            />
+        <TextView
+            android:id="@+id/tvCoupon"
+            android:layout_width="0.0dip"
+            android:layout_height="40.0dip"
+            android:layout_weight="1.0"
+            android:background="@drawable/event_info_bg"
+            android:gravity="right"
+            android:paddingBottom="12.0dip"
+            android:paddingLeft="0.0dip"
+            android:paddingRight="12.0dip"
+            android:paddingTop="12.0dip"
+            android:text="coupon?"
+            android:textColor="#ff36383a"
+            android:textSize="14.0sp"
+            android:visibility="gone"
+             />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lyOrderDIVIDER2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_large"
+        android:orientation="horizontal" >
+
+        <View
+            android:layout_width="0.0dip"
+            android:layout_height="@dimen/divider_medium"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/spacing_large"
+            android:layout_marginRight="@dimen/spacing_large"
+            android:layout_weight="1.0"
+            android:background="@color/ct_dark_gray_20p" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/order_payment_method"
+            android:textColor="@color/ct_dark_gray_20p" />
+
+        <View
+            android:layout_width="0.0dip"
+            android:layout_height="@dimen/divider_medium"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/spacing_large"
+            android:layout_marginRight="@dimen/spacing_large"
+            android:layout_weight="1.0"
+            android:background="@color/ct_dark_gray_20p" />
+    </LinearLayout>
+	<Button
+        android:id="@+id/btnOrderFreeConfirm"
+        android:layout_width="fill_parent"
+        android:layout_height="48.0dip"
+        android:layout_margin="7.0dip"
+        android:background="@drawable/btn_finish_rd"
+        android:paddingRight="37.0dip"
+        android:text="@string/confirm"
+        android:textAllCaps="true"
+        android:textColor="#ffffffff"
+        android:textSize="20.0sp" />
+	
+    <Button
+        android:id="@+id/btnOrderPaypal"
+        android:layout_width="fill_parent"
+        android:layout_height="48.0dip"
+        android:layout_margin="7.0dip"
+        android:background="@drawable/btn_finish_rd"
+        android:paddingRight="37.0dip"
+        android:text="@string/event_order_ppl"
+        android:textAllCaps="true"
+        android:textColor="#ffffffff"
+        android:textSize="20.0sp" />
+
+    <Button
+        android:id="@+id/btnOrderCc"
+        android:layout_width="fill_parent"
+        android:layout_height="48.0dip"
+        android:layout_margin="7.0dip"
+        android:background="@drawable/btn_finish_rd"
+        android:paddingRight="37.0dip"
+        android:text="@string/event_order_cc"
+        android:textAllCaps="true"
+        android:textColor="#ffffffff"
+        android:textSize="20.0sp" />
+
+    <Button
+        android:id="@+id/btnOrderSMS"
+        android:layout_width="fill_parent"
+        android:layout_height="48.0dip"
+        android:layout_margin="7.0dip"
+        android:background="@drawable/btn_finish_rd"
+        android:paddingRight="37.0dip"
+        android:text="@string/event_order_sms"
+        android:textAllCaps="true"
+        android:textColor="#ffffffff"
+        android:textSize="20.0sp" />
+
+</LinearLayout>

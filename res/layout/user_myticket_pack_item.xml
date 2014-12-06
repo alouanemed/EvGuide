@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="60.0dip"
+    android:orientation="horizontal" >
+
+     
+
+    <LinearLayout
+        android:layout_width="0.0dip"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1.0"
+        android:background="@drawable/clickable_infos_inv_states"
+        android:gravity="left|center"
+        android:orientation="vertical"
+        android:padding="8.0dip" >
+
+        <TextView
+            android:id="@+id/tvmyticketpackTitle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+             android:gravity="center_vertical"
+            android:text="Maroc ta7n9iz awards"
+            android:textColor="#ff4c626f"
+            android:textSize="14.0sp" />
+    </LinearLayout>
+<LinearLayout
+        android:layout_width="60.0dip"
+        android:layout_height="fill_parent"
+        android:background="@drawable/ogranizer_event_dark_bg"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="8.0dip" >
+
+         
+
+        <TextView
+            android:id="@+id/tvmyticketpack_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+        <TextView
+            android:id="@+id/tvmyticketpackQrCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="0.0dip"
+            android:text="4"
+            android:textColor="#ff676767"
+            android:textSize="28.0sp" />
+    </LinearLayout>
+</LinearLayout>

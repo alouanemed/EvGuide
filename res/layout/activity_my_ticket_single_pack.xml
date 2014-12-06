@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout_barcode_wrapper"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffe8e8e8" >
+
+    <!--
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="50.0dip"
+            android:layout_marginTop="-1.0dip"
+            android:background="@drawable/event_details_section_background"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textview_barcode_hidden"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffc346"
+                android:drawableLeft="@drawable/ticket_hidden"
+                android:gravity="center"
+                android:padding="10.0dip"
+                android:text="@string/ticket_view_activity_no_mobile_ticket"
+                android:textColor="#ffffffff"
+                android:textSize="15.0sp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/textview_barcode_EvTitle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="3.0dip"
+                android:layout_marginTop="60.0dip"
+                android:gravity="center"
+                android:text="@string/discover_a_name"
+                android:textAllCaps="true"
+                android:textColor="@color/light_title"
+                android:textSize="28.0sp" />
+        </LinearLayout>   -->
+
+    <LinearLayout
+        android:id="@+id/myTicketPackList"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tvEventPacktitle"
+            android:layout_width="fill_parent"
+            android:layout_height="90dp" 
+            android:layout_marginBottom="3.0dip"
+             android:background="@drawable/event_details_section_background"
+            android:gravity="center"
+            android:text="@string/event_pack_ox"
+            android:textAllCaps="true"
+            android:textColor="@color/light_title"
+            android:textSize="28.0sp" />
+
+        <include
+            android:id="@+id/incforfaitlist"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            layout="@layout/event_forfait_listv" />
+    </LinearLayout>
+
+</LinearLayout>

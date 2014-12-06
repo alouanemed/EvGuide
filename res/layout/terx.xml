@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+     android:orientation="vertical"
+    android:padding="10.0dip" >
+<!-- 
+    <EditText
+        android:id="@+id/edittext_contact_organizer_your_name"
+        style="@style/EditTextHoloLight"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/contact_organizer_your_name"
+        android:inputType="textPersonName"
+        android:singleLine="true"
+        android:textSize="18.0sp" />
+
+    <EditText
+        android:id="@+id/edittext_contact_organizer_your_email"
+        style="@style/EditTextHoloLight"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10.0dip"
+        android:hint="@string/contact_organizer_email"
+        android:inputType="textEmailAddress"
+        android:singleLine="true"
+        android:textSize="18.0sp" />
+
+    <EditText
+        android:id="@+id/edittext_contact_organizer_body"
+        style="@style/EditTextHoloLight"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10.0dip"
+        android:hint="@string/contact_organizer_body"
+        android:textSize="18.0sp" /> -->
+
+</LinearLayout>
