@@ -16,10 +16,12 @@ public class EvmaApp extends Application {
 	
 	public static final String TAG = "Evma";
 	
+	//When you using localhost
 	public static final String MainDirUrl = "http://192.168.1.20:80/Evma";
+	//When using shared network
 	//public static final String MainDirUrl = "http://169.254.205.112:80/Evma";
 
-
+	///web services
 	public static String LoginUrl = MainDirUrl + "/users/api_loginx";
 
 	public static String EventCoverUrl = MainDirUrl + "/uploads/Events/covers/";
