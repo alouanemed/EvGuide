@@ -155,7 +155,7 @@ public class OrderBilletOverview extends Activity {
 			if (!dir.exists())
 				dir.mkdirs();
 
-			Log.d("PDFCreator", "PDF Path: " + path);
+			Log.d(" ", "PDF Path: " + path);
 
 			File file = new File(dir, CommandeController.UnkcmdUUID + ".pdf");
 			FileOutputStream fOut = new FileOutputStream(file);
@@ -166,8 +166,7 @@ public class OrderBilletOverview extends Activity {
 			doc.open();
  			for (int i = 0; i < Integer.valueOf(OrderOverview.pack_order_qty); i++) {
 				doc.newPage();
-				Paragraph p1 = new Paragraph(
-						"Hi!This is your ticket");
+				Paragraph p1 = new Paragraph(	"Hi!This is your ticket");
 				Font paraFont = new Font(Font.COURIER);
 				p1.setAlignment(Paragraph.ALIGN_CENTER);
 				p1.setFont(paraFont);
@@ -201,7 +200,7 @@ public class OrderBilletOverview extends Activity {
 
  
 				// set footer
-				Phrase footerText = new Phrase("This is an example of a footer");
+				Phrase footerText = new Phrase("Copyleft AlouaneMed");
 				HeaderFooter pdfFooter = new HeaderFooter(footerText, false);
 				doc.setFooter(pdfFooter);
  
@@ -234,13 +233,13 @@ public class OrderBilletOverview extends Activity {
 		table.getDefaultCell().setBorder(3);
 		table.getDefaultCell().setBorderColor(harmony.java.awt.Color.gray);
 
-		cell = new PdfPCell(new Phrase("Table 1"));
+		cell = new PdfPCell(new Phrase("tab"));
 		cell.setColspan(4);
 		cell.setBorderWidth(8f);
 		cell.setBorderColor(harmony.java.awt.Color.gray);
 		table.addCell(cell);
 		if (BilletQrCode == null) {
-			System.out.println("Nuuuuuiolllllllllll");
+			System.out.println("NULL");
 		}
 		String Imgpath = (String) BilletQrCode.getTag();
 		String fname =   Environment.getExternalStorageDirectory().getPath()+"/saved_images" + "/"+fnames[i];
@@ -321,9 +320,9 @@ public class OrderBilletOverview extends Activity {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		String Formateddate = new SimpleDateFormat("dd MMMM yyyy à HH:mm:ss")
+		String Formateddate = new SimpleDateFormat("dd MMMM yyyy Ã  HH:mm:ss")
 				.format(date);
-		System.out.println(Formateddate + " xxxxxxxxxxxxx"); // 2011-01-18
+		System.out.println(Formateddate + " |||"); // 2011-01-18
 
 		p = new Phrase(Formateddate, paraFont16);
 		cell = new PdfPCell(p);
