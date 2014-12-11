@@ -39,7 +39,7 @@ public class UserController {
 	HttpClient httpclient;
 	List<NameValuePair> nameValuePairs;	
 	
-	private static String TAG = "LoginController";
+	private static String TAG = "UserController";
 	
 	
 	public boolean loginEvuser(String url,String us,String pw){
@@ -48,7 +48,6 @@ public class UserController {
 			httpclient = new DefaultHttpClient();
 			httppost = new HttpPost(url); // make sure the url is correct.
 			//httppost.setHeader( "Content-Type", "application/json" );
-			System.out.println("ksx");
 			nameValuePairs = new ArrayList<NameValuePair>(2);
 			nameValuePairs.add(new BasicNameValuePair("username",us));  // $Edittext_value = $_POST['Edittext_value'];
 			nameValuePairs.add(new BasicNameValuePair("password",pw)); 
@@ -59,7 +58,6 @@ public class UserController {
 			ResponseHandler<String> responseHandler = new BasicResponseHandler();
 			final String responsex = httpclient.execute(httppost, responseHandler);
 			
-			System.out.println("ksqqq");
 			Log.d(TAG ," Response : "+response  + " == <" +responsex);
 			/*
 			runOnUiThread(new Runnable() {
