@@ -45,7 +45,7 @@ public class HomeStart extends Activity implements OnClickListener{
 			EvmaApp.CurrentUserEmail = "flahweb@gmail.com";//fidaghdour@synergie-media.com
 			EvmaApp.CurrentOrganizer = "";
 			EvmaApp.CurrentUsernameID = 11;
-			User us = new User("11", "Ahmedx", "", "Utilisateur", "Ahmed Saadaoui", "flahweb@gmail.com", "", "");
+			User us = new User("11", "Ahmedx", "", "Utilisateur", "AlouaneMed", "flahweb@gmail.com", "", "");
 			EvmaApp.CurrentUser = us;
 			
 			Intent intUser = new Intent(HomeStart.this,MainEv.class);
@@ -55,7 +55,7 @@ public class HomeStart extends Activity implements OnClickListener{
 			EvmaApp.CurrentUsername = "";
 			EvmaApp.CurrentUsernameID = 1;
 
-			User us = new User("1", "adm1", "", "Organisateur", "Ahmed Saadaoui", "flahweb@gmail.com", "", "");
+			User us = new User("1", "adm1", "", "Organisateur", "AlouaneMed", "flahweb@gmail.com", "", "");
 			EvmaApp.CurrentUser = us;
 			Intent intUser = new Intent(HomeStart.this,MainEv.class);
 			startActivity(intUser);
