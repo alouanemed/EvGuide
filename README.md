@@ -19,12 +19,13 @@ Feel free to add anything :code enhancement ...
 Fork it , clone it and push commits !
 
 
-###copyrights
+###License
 
 This project is under  [/Apache License](https://github.com/AlouaneMed/EvGuide/blob/master/LICENSE)
 
 
 
-others:
+###copyrights
+
 
 -Ev.ma and Ev logo © 
