@@ -184,7 +184,7 @@ public class user_my_tickets extends FragmentActivity implements  OnNavigationLi
 
 	public class MyPagerAdapter extends FragmentPagerAdapter {
 
-		private final String[] TITLES = { "Comoing event", "Past event"};
+		private final String[] TITLES = { "Upcoming events", "Past events"};
 
 		public MyPagerAdapter(FragmentManager fm) {
 			super(fm);
