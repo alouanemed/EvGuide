@@ -42,7 +42,6 @@ import com.lpii.evma.view.organizer.OrganizerEvInfosFragment;
 import com.lpii.evma.view.organizer.OrganizerEvOverViewFragment;
 import com.lpii.evma.view.organizer.OrganizerEvParticipantsFragment;
 import com.lpii.evma.view.organizer.PagerSlidingTabStripEv;
-import com.lpii.evma.view.organizer.QuickContactFragment;
 
 
 public class user_my_tickets extends FragmentActivity implements  OnNavigationListener  {
@@ -157,19 +156,9 @@ public class user_my_tickets extends FragmentActivity implements  OnNavigationLi
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item) {
 
-		System.out.println("dfddd");
 		if (mDrawerToggle.onOptionsItemSelected(item)) {
 	          return true;
 	        } 
-		switch (item.getItemId()) {
-
-		case R.id.action_refresh:
-			QuickContactFragment dialog = new QuickContactFragment();
-			dialog.show(getSupportFragmentManager(), "QuickContactFragment");
-			return true;
-
-		}
-
 		return super.onOptionsItemSelected(item);
 	}
  
