@@ -231,7 +231,7 @@ public class OrganizerEvForfaitFragment extends ListFragment{
                     }
 					 
                 }, mYear, mMonth, mDay);
-                mDatePicker.setTitle("Date de l'événement");
+                mDatePicker.setTitle("Date de l'Ã©vÃ©nement");
                 mDatePicker.show();
 				
 				 
@@ -265,7 +265,7 @@ public class OrganizerEvForfaitFragment extends ListFragment{
                     }
 					 
                 }, mYear, mMonth, mDay);
-                mDatePicker.setTitle("Date de l'événement");
+                mDatePicker.setTitle("Date de l'Ã©vÃ©nement");
                 mDatePicker.show();
 				
 				 
@@ -295,7 +295,7 @@ public class OrganizerEvForfaitFragment extends ListFragment{
 
 					 
 	            }, hour, minute, true);//Yes 24 hour time
-	            mTimePicker.setTitle("Horaire de l'événement");
+	            mTimePicker.setTitle("Horaire de l'Ã©vÃ©nement");
 	            mTimePicker.show();
  
 			}
@@ -323,7 +323,7 @@ public class OrganizerEvForfaitFragment extends ListFragment{
 
 					 
 	            }, hour, minute, true);//Yes 24 hour time
-	            mTimePicker.setTitle("Début de la vente de billets  ");
+	            mTimePicker.setTitle("DÃ©but de la vente de billets  ");
 	            mTimePicker.show();
 
 				 
@@ -393,7 +393,7 @@ public class OrganizerEvForfaitFragment extends ListFragment{
 			
 			@Override
 			public void onClick(View v) {
-				System.out.println("lets add this thing to databse");
+				System.out.println("lets add this thing to database");
 				 if (mForm.isValid()) {
 
 					String isVisible = CBisVisible.isChecked()? "1":"0";
@@ -734,12 +734,12 @@ public class OrganizerEvForfaitFragment extends ListFragment{
 			System.out.println("done "  );
 			Crouton crouton ;
 			if (EvmaApp.isError) {
-				crouton = Crouton.makeText(getActivity(), "une erreur est survenue lors la mise jour", de.keyboardsurfer.android.widget.crouton.Style.ALERT);
+				crouton = Crouton.makeText(getActivity(), "une erreur est survenue lors la mise Ã  jour", de.keyboardsurfer.android.widget.crouton.Style.ALERT);
 			}else{
 				if (PackAction.equals("Update")) {
-					crouton = Crouton.makeText(getActivity(), "Le forfait a été mise jour avec succès", de.keyboardsurfer.android.widget.crouton.Style.CONFIRM);
+					crouton = Crouton.makeText(getActivity(), "Le forfait a Ã©tÃ© mise jour avec succÃ¨s", de.keyboardsurfer.android.widget.crouton.Style.CONFIRM);
 				}else{
-					crouton = Crouton.makeText(getActivity(), "Le forfait a été ajouté avec succès", de.keyboardsurfer.android.widget.crouton.Style.CONFIRM);
+					crouton = Crouton.makeText(getActivity(), "Le forfait a Ã©tÃ© ajoutÃ© avec succÃ¨s", de.keyboardsurfer.android.widget.crouton.Style.CONFIRM);
 				}
 				
 				
@@ -841,7 +841,7 @@ public class OrganizerEvForfaitFragment extends ListFragment{
         }
         System.out.println(EvForfaitPrice);
 		if (EvForfaitPrice.equals("Gratuit")) {
-			System.out.println("null Bor ! ");
+			System.out.println("null bro ! ");
 			freeformshow();
 		}else{
 			mShowPaidForm();
