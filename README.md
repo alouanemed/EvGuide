@@ -1,7 +1,7 @@
 EvGuide
 =======
 
-An Android app for events management,one of my first Android project !
+An Android app for events management .
 
 ![EvGuide by AlouaneMed ](ev.png)
  
@@ -9,9 +9,9 @@ An Android app for events management,one of my first Android project !
 ###Install
 
 
-Clone the project files and import it with Eclipse
+Clone the project files and import it with Eclipse or Androis Studio .
 
-### Android Studio : Coming soon
+
 ###Contributing
 
 Feel free to add anything :code enhancement ...
@@ -29,4 +29,3 @@ This project is under  [/Apache License](https://github.com/AlouaneMed/EvGuide/b
 
 
 -Ev.ma and Ev logo © 
--that's all
