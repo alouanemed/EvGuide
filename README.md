@@ -9,14 +9,14 @@ An Android app for events management .
 ###Install
 
 
-Clone the project files and import it with Eclipse or Androis Studio .
+Clone the project and import it with Eclipse or Android Studio .
 
 
 ###Contributing
 
 Feel free to add anything :code enhancement ...
 
-Fork it , clone it and push commits !
+Fork it , clone it and push commits ! .
 
 
 ###License
