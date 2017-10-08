@@ -6,26 +6,26 @@ An Android app for events management .
 ![EvGuide by AlouaneMed ](ev.png)
  
 
-###Install
+### Install
 
 
 Clone the project and import it with Eclipse or Android Studio .
 
 
-###Contributing
+### Contributing
 
 Feel free to add anything :code enhancement ...
 
 Fork it , clone it and push commits ! .
 
 
-###License
+### License
 
 This project is under  [/Apache License](https://github.com/AlouaneMed/EvGuide/blob/master/LICENSE)
 
 
 
-###copyrights
+### Copyrights
 
 
 -Ev.ma and Ev logo © 
